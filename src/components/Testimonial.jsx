@@ -33,7 +33,7 @@ export default function Testimonials() {
     <section id="testimonials" className="scroll-m-5 bg-linear-to-br from-black via-[#0b0b0b] to-[#1a1a1a] py-20 px-4 md:px-8 lg:px-16 text-white">
       {/* Heading */}
       <div className="text-center mb-12">
-        <p className="text-sm text-[#861918] tracking-widest uppercase">Testimonials</p>
+        <p className="text-sm text-[#e80202] tracking-widest uppercase">Testimonials</p>
         <h2 className="text-3xl md:text-4xl font-extrabold mt-2">What Our Clients Say</h2>
       </div>
 
@@ -56,7 +56,7 @@ export default function Testimonials() {
           {testimonials.map((t, i) => (
             <div
               key={i}
-              className="bg-[#111]/70 backdrop-blur-sm border border-white/10 p-6 rounded-xl shadow-md hover:border-[#861918] transition-all duration-500 group"
+              className="bg-[#111]/70 backdrop-blur-sm border border-white/10 p-6 rounded-xl shadow-md hover:border-[#e80202] transition-all duration-500 group"
             >
               <p className="text-gray-300 mb-4 leading-relaxed italic group-hover:text-gray-100 transition-colors">
                 “{t.quote}”
@@ -64,7 +64,7 @@ export default function Testimonials() {
 
               <div className="flex items-center mt-4">
                 {/* Circle with first letter */}
-                <div className="w-12 h-12 rounded-full bg-[#861918]/40 flex items-center justify-center mr-3 border border-[#ff4d24]/20 text-white font-semibold text-lg">
+                <div className="w-12 h-12 rounded-full bg-[#e80202]/40 flex items-center justify-center mr-3 border border-[#ff4d24]/20 text-white font-semibold text-lg">
                   {t.name.charAt(0)}
                 </div>
 
@@ -84,7 +84,7 @@ export default function Testimonials() {
           href="https://www.google.com/search?sca_esv=dc724815bbf34a06&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=AE3TifNd1iPErvhtDdDjWX0naV9F24D4_Q:1761842786248&si=AMgyJEuzsz2NflaaWzrzdpjxXXRaJ2hfdMsbe_mSWso6src8s6AKuefx5H1RVdZN9nU4KIhhbK1R5UFliYmD5J9C2W_kUD3CyX6ngbOInFx8LkvfuULV3FF3FtOUgfD0mstxLXTWt_sD&q=T+T+Automotive+Reviews&sa=X&ved=2ahUKEwiKrbLrr8yQAxV_ia8BHZN7F30Q0bkNegQIMRAE&biw=1366&bih=633&dpr=1"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-[#861918] font-semibold hover:underline tracking-wide"
+          className="text-[#e80202] font-semibold hover:underline tracking-wide"
         >
           View on Google
         </a>

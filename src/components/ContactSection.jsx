@@ -53,17 +53,17 @@ Please follow up with this customer.`;
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* LEFT COLUMN */}
         <div>
-          <h2 className="text-4xl font-bold mb-6 text-[#861918]">Get In Touch</h2>
+          <h2 className="text-4xl font-bold mb-6 text-[#e80202]">Get In Touch</h2>
           <ul className="space-y-4 text-gray-300">
             <li>
               <span className="font-semibold text-white">General inquiries:</span>{" "}
-              <a href="tel:+441162530770" className="hover:underline text-[#861918]">
+              <a href="tel:+441162530770" className="hover:underline text-[#e80202]">
                 +44 116 253 0770
               </a>
             </li>
             <li>
               <span className="font-semibold text-white">Email:</span>{" "}
-              <a href="mailto:ttautosgarage@gmail.com" className="hover:underline font-sans text-[#861918]">
+              <a href="mailto:ttautosgarage@gmail.com" className="hover:underline font-sans text-[#e80202]">
                 ttautosgarage@gmail.com
               </a>
             </li>
@@ -73,7 +73,7 @@ Please follow up with this customer.`;
                 href="https://www.ttauto.co.uk"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline text-[#861918]"
+                className="hover:underline text-[#e80202]"
               >
                 www.sample.co.uk
               </a>
@@ -84,7 +84,7 @@ Please follow up with this customer.`;
                 href="https://maps.app.goo.gl/4ytEwh7M5M9Cn73U9"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline text-[#861918]"
+                className="hover:underline text-[#e80202]"
               >
                 Unit 1, 76 Nedham St, Leicester LE2 0HA, United Kingdom
               </a>
@@ -110,7 +110,7 @@ Please follow up with this customer.`;
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full p-3 rounded-md bg-[#1A1A1A] text-gray-200 border border-gray-700 focus:border-[#861918] outline-none"
+              className="w-full p-3 rounded-md bg-[#1A1A1A] text-gray-200 border border-gray-700 focus:border-[#e80202] outline-none"
             />
 
             <input
@@ -120,7 +120,7 @@ Please follow up with this customer.`;
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full p-3 rounded-md bg-[#1A1A1A] text-gray-200 border border-gray-700 focus:border-[#861918] outline-none"
+              className="w-full p-3 rounded-md bg-[#1A1A1A] text-gray-200 border border-gray-700 focus:border-[#e80202] outline-none"
             />
 
             <input
@@ -130,7 +130,7 @@ Please follow up with this customer.`;
               value={formData.phone}
               onChange={handleChange}
               required
-              className="w-full p-3 rounded-md bg-[#1A1A1A] text-gray-200 border border-gray-700 focus:border-[#861918] outline-none"
+              className="w-full p-3 rounded-md bg-[#1A1A1A] text-gray-200 border border-gray-700 focus:border-[#e80202] outline-none"
             />
 
             <select
@@ -138,7 +138,7 @@ Please follow up with this customer.`;
               value={formData.service}
               onChange={handleChange}
               required
-              className="w-full p-3 rounded-md bg-[#1A1A1A] text-gray-200 border border-gray-700 focus:border-[#861918] outline-none"
+              className="w-full p-3 rounded-md bg-[#1A1A1A] text-gray-200 border border-gray-700 focus:border-[#e80202] outline-none"
             >
               <option value="">Select a Service</option>
               <option value="MOT Testing">MOT Testing – Road Safety & Compliance</option>
@@ -160,17 +160,17 @@ Please follow up with this customer.`;
               value={formData.message}
               onChange={handleChange}
               required
-              className="w-full p-3 rounded-md bg-[#1A1A1A] text-gray-200 border border-gray-700 focus:border-[#861918] outline-none"
+              className="w-full p-3 rounded-md bg-[#1A1A1A] text-gray-200 border border-gray-700 focus:border-[#e80202] outline-none"
             ></textarea>
 
             <button
               type="submit"
-              className="bg-[#861918] text-black font-semibold py-3 px-6 rounded-md hover:bg-[#700e12] transition w-full"
+              className="bg-[#e80202] text-black font-semibold py-3 px-6 rounded-md hover:bg-[#700e12] transition w-full"
             >
               Send via WhatsApp
             </button>
           </div>
-          <p className="text-xs mt-5 text-center dark:text-gray-300">By submitting this form, you agree to us processing your details to respond to your enquiry. Your information is handled securely and in line with our Privacy Policy.</p>
+          <p className="text-xs mt-5 text-center ">By submitting this form, you agree to us processing your details to respond to your enquiry. Your information is handled securely and in line with our Privacy Policy.</p>
         </form>
       </div>
     </section>

@@ -11,12 +11,17 @@ import Brake from "./page/Services/Brake";
 import TimeBelts from "./page/Services/TimeBelts";
 import Batteries from "./page/Services/Batteries";
 import Suspension from "./page/Services/Suspension";
-import Servicing from "./page/Services/Servicing";
-import Clutches from "./page/Services/Clutches";
-import Diagnostics from "./page/Services/Diagnostics";
-import Aircon from "./page/Services/Aircon";
-import Customisation from "./page/Services/Customisation";
 import ReviewPage from "./page/ReviewPage";
+
+import Derby from "./page/Location/Derby";
+import Leicester from "./page/Location/Leicester";
+import Nottingham from "./page/Location/Nottingham";
+import Mansfield from "./page/Location/Mansfield";
+import Grantham from "./page/Location/Grantham";
+import Loughborough from "./page/Location/Loughborough";
+
+
+
 function App() {
   return (
     <Router>
@@ -25,16 +30,22 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/review" element={<ReviewPage />} />
-        <Route path="/services/mot" element={<Mot />} />
-        <Route path="/services/brake" element={<Brake />} />
-        <Route path="/services/time-belts" element={<TimeBelts />} />
-        <Route path="/services/batteries" element={<Batteries />} />
-        <Route path="services/suspension" element={<Suspension />} />
-        <Route path="services/Servicing" element={<Servicing />} />
-        <Route path="/services/clutches" element={<Clutches />} />
-        <Route path="services/diagnostics" element={<Diagnostics />} />
-        <Route path="services/aircon" element={<Aircon />} />
-        <Route path="services/customisation" element={<Customisation />} />
+
+        {/* Service Routes */}
+        <Route path="/services/ceramic-coating" element={<Mot />} />
+        <Route path="/services/valeting" element={<Brake />} />
+        <Route path="/services/paint-correction" element={<TimeBelts />} />
+        <Route path="/services/deep-restoration" element={<Batteries />} />
+        <Route path="services/maintenance-plan" element={<Suspension />} />
+
+        {/* Location Routes */}
+        <Route path="/locations/leicester" element={<Leicester />} />
+        <Route path="/locations/nottingham" element={<Nottingham />} />
+        <Route path="/locations/derby" element={<Derby />} />
+        <Route path="/locations/mansfield" element={<Mansfield />} />
+        <Route path="/locations/grantham" element={<Grantham />} />
+        <Route path="/locations/loughborough" element={<Loughborough />} />
+
         <Route path="/terms" element={<TermsConditions />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
       </Routes>

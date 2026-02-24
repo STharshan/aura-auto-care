@@ -1,106 +1,111 @@
-// components/FooterSection.jsx
-import { Instagram } from "lucide-react";
-import { FaTiktok } from "react-icons/fa"; // ✅ TikTok icon
+import React from "react";
+import { Instagram, Facebook } from "lucide-react";
+import { BsTiktok } from "react-icons/bs";
 
-export default function FooterSection() {
+const Footer = () => {
   return (
-    <footer className="bg-[#0B0B0B] text-gray-400 py-4">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        {/* Top Row */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 border-b border-gray-700 pb-8 mb-8">
-          {/* Column 1 */}
-          <div>
-            <h2 className="text-2xl font-bold text-white mb-3">TT Autos Leicester LTD</h2>
+    <footer className="bg-black text-white">
+      {/* TOP */}
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        <div className="flex flex-col md:flex-row justify-between gap-10">
 
+          {/* BRAND */}
+          <div className="flex flex-col flex-1">
+            <span className="text-2xl font-bold mb-4">
+              Aura Auto Care
+            </span>
 
-            {/* Social Media Icons */}
-            <div className="flex items-center gap-4 mt-2">
-              <a
-                href="https://www.instagram.com/ttautos_/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-[#E1306C] transition"
-              >
-                <Instagram size={20} />
+            <p className="text-gray-300 leading-relaxed mb-6 max-w-sm">
+              Aura AutoCare brings top-tier automotive care directly to your doorstep. Whether you're at home, at work, or on the go, our fully equipped mobile units deliver professional detailing services with convenience and precision.
+            </p>
+
+            {/* SOCIALS */}
+            <div className="flex gap-5 mt-auto">
+              <a href="https://www.instagram.com/aura.autocare/" target="_blank" className="hover:text-pink-500 transition text-2xl">
+                <Instagram />
               </a>
-              <a
-                href="https://www.tiktok.com/@ttautos"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition"
-              >
-                <FaTiktok size={20} />
+              <a href="https://www.tiktok.com/@auraautocare" target="_blank" className="hover:text-[#e80202] transition text-2xl">
+                <BsTiktok />
               </a>
             </div>
           </div>
 
-          {/* Column 2 */}
-          <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
-            <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-[#861918] transition">Home</a></li>
-              <li><a href="#about" className="hover:text-[#861918] transition">About Us</a></li>
-              <li><a href="#service" className="hover:text-[#861918] transition">Service</a></li>
-              <li><a href="#package" className="hover:text-[#861918] transition">Package</a></li>
-              <li><a href="#contact" className="hover:text-[#861918] transition">Contact</a></li>
+          {/* PAGES */}
+          <div className="flex flex-col flex-1 md:items-center">
+            <h4 className="text-lg font-semibold mb-6">Pages</h4>
+            <ul className="space-y-4 text-gray-300 md:text-center">
+              <li><a href="/" className="hover:text-white transition">Home</a></li>
+              <li><a href="/about" className="hover:text-white transition">About Us</a></li>
+              <li><a href="/service" className="hover:text-white transition">Service</a></li>
+              <li><a href="/contact" className="hover:text-white transition">Contact</a></li>
             </ul>
           </div>
 
-          {/* Column 3 */}
-          <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Business Info</h3>
-            <ul className="text-sm space-y-2">
-              {/* <li><span className="text-white font-semibold">Company Reg:</span> 1153016</li>
-              <li><span className="text-white font-semibold">VAT Reg:</span> 115 5821 84</li> */}
-              <li><span className="text-white font-semibold">Opening Hours:</span><span className="text-lg"> 9:00 AM – 5:00 PM (Mon–Fri)</span> </li>
+          {/* OPENING HOURS - NEW SECTION */}
+          <div className="flex flex-col flex-1 md:items-center">
+            <h4 className="text-lg font-semibold mb-6">Opening Hours</h4>
+            <ul className="space-y-2 text-gray-300 md:text-center text-sm">
+              <li>Mon - Sun: 	9 AM – 7:30 PM</li>
+            </ul>
+          </div>
+
+          {/* COMPANY */}
+          <div className="flex flex-col flex-1 md:items-end items-start">
+            <h4 className="text-lg font-semibold mb-6">Company</h4>
+            <ul className="space-y-4 text-gray-300 md:text-right">
+              {/* Clickable phone */}
               <li>
-                <span className="text-white font-semibold">Phone:</span>{" "}
-                <a href="tel:01162530770" className="hover:underline text-lg hover:text-[#861918]">
-                  +44 116 253 0770
+                <a href="tel: +447305794353" className="hover:text-white transition-colors">
+                  +44 7305 794353
                 </a>
               </li>
+
+              {/* Clickable email */}
               <li>
-                <span className="text-white font-semibold">Email:</span>{" "}
-                <a href="mailto:ttautosgarage@gmail.com" className="hover:underline text-lg hover:text-[#861918]">
-                  ttautosgarage@gmail.com
+                <a href="mailto:auraautocare1@gmail.com" className="hover:text-white transition-colors">
+                  auraautocare1@gmail.com
+                </a>
+              </li>
+
+              {/* Clickable address (Google Maps link) */}
+              <li>
+                <a
+                  href="https://maps.app.goo.gl/e1S2etqinvH3EkZr7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  Nottingham
+                  <br />
+                  East midlands
+                  <br />
+                  United Kingdom
                 </a>
               </li>
             </ul>
           </div>
+
+        </div>
+      </div>
+
+      {/* DIVIDER */}
+      <div className="border-t border-white/20" />
+
+      {/* BOTTOM */}
+      <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-300">
+        <div className="text-center md:text-left">
+          © {new Date().getFullYear()} Aura Auto Care. All rights reserved.
         </div>
 
-        {/* Bottom Divider */}
-        <div className="text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} TT Autos Leicester LTD. All rights reserved.</p>
-        </div>
+        <div>Powered by <a href="https://www.ansely.co.uk/" className="hover:underline hover:text-[#F21B23]">Ansely</a></div>
 
-        {/* Bottom Bar */}
-        <div className="mt-2 flex flex-col sm:flex-row justify-center items-center gap-3 text-center font-semibold text-gray-400">
-          {/* Left: Terms & Privacy */}
-          <div className="flex gap-4 text-sm">
-            <a href="/terms" className="hover:text-[#861918] transition duration-300">
-              Terms & Conditions
-            </a>
-            <span className="text-gray-500">|</span>
-            <a href="/privacy" className="hover:text-[#861918] transition duration-300">
-              Privacy Policy
-            </a>
-          </div>
-
-          {/* Center: Powered by Ansely */}
-          <p className="text-center font-semibold text-gray-400">
-            Powered by{" "}
-            <a
-              href="https://www.ansely.co.uk/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#861918] hover:underline"
-            >
-              Ansely
-            </a>
-          </p>
+        <div className="flex gap-6">
+          <a href="/privacy" className="underline hover:text-white transition">Privacy Policy</a>
+          <a href="/terms" className="underline hover:text-white transition">Terms of Service</a>
         </div>
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;

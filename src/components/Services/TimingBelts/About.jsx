@@ -1,6 +1,3 @@
-
-
-
 export default function AboutSection() {
   return (
     <section className="w-full bg-black text-white flex flex-col items-center justify-center py-16 px-4 md:px-8">
@@ -9,7 +6,7 @@ export default function AboutSection() {
         <div className="bg-[#1a1a1a] flex items-center justify-center p-8 md:p-12">
           <img
             src="/spray-can-analysis.png"
-            alt="Performance Spray Cans"
+            alt="Aura Auto Care"
             className="w-64 sm:w-72 md:w-80 lg:w-96 object-contain"
           />
         </div>
@@ -17,12 +14,21 @@ export default function AboutSection() {
 
       {/* Text Section */}
       <div className="max-w-4xl text-center md:text-left">
+        {/* Main Heading */}
         <h2 className="text-2xl md:text-3xl font-semibold mb-4">
-          Analysis – Precision and Prevention
+          Analysis – Paint Defect Removal & Refinement
         </h2>
 
+        {/* Description */}
         <p className="text-gray-300 leading-relaxed mb-6">
-         We replace worn timing belts and tensioners using manufacturer-approved intervals and OE-quality components. Our goal is to protect your engine from serious internal damage while maintaining perfect timing accuracy.
+          We perform multi-stage machine polishing to correct paint defects such as
+          swirl marks, scratches, oxidation, and haze. Our process restores clarity,
+          gloss, and depth while preserving the integrity of the clear coat.
+        </p>
+
+        <p className="text-gray-300 leading-relaxed mb-6">
+          Paint correction is recommended before ceramic coating or for vehicles requiring
+          a high-end finish.
         </p>
 
         {/* Subsection: Performance */}
@@ -30,20 +36,15 @@ export default function AboutSection() {
           <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
             Performance{" "}
             <span className="bg-blue-600 text-xs text-white font-medium px-2 py-0.5 rounded-md">
-              TT Auto
+              Aura Auto Care
             </span>
           </h3>
 
           <ul className="text-gray-300 leading-relaxed list-disc list-inside space-y-1">
-            <li>
-               Timing belt replacement specialists in Leicester and Midlands.
-            </li>
-            <li>
-              Manufacturer-spec belts, pulleys, and tensioners used.
-            </li>
-            <li>
-              Prevents major engine failure and performance loss.
-            </li>
+            <li>Paint inspection and defect assessment</li>
+            <li>Multi-stage machine polishing with professional compounds</li>
+            <li>Refining polish for enhanced gloss and clarity</li>
+            <li>Optional protective sealant or coating application</li>
           </ul>
         </div>
 
@@ -51,7 +52,9 @@ export default function AboutSection() {
         <div className="text-left">
           <h3 className="text-lg font-semibold mb-2">Responsiveness</h3>
           <p className="text-gray-300 leading-relaxed">
-           Our precise installation ensures smooth power delivery, quiet operation, and long-term reliability across all engine types.
+            Our paint correction process is tailored for each vehicle, balancing precision
+            and efficiency while delivering premium results with clear communication and
+            aftercare guidance.
           </p>
         </div>
       </div>

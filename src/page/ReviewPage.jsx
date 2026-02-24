@@ -29,7 +29,7 @@ export default function ReviewPage() {
         } else {
             setShowReviewBox(false);
             window.open(
-                "https://www.google.com/search?sca_esv=0cca2ee0e671afa3&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=ANbL-n7WIJZwBQNu_qH3DMHp4etM__VzYQ:1770053718396&si=AL3DRZFIhG6pAqfNLal55wUTwygCG0fClF3UxiOmgw9Hq7nbWWvnlxyOtSbAodJocC3AZ7djdMLPvp1Ctj8ib8Ht94tYz-_tSKcdX1gQEKf14KIZlioCF97M0diIsgLsSNjFiIGyM5-Thur0U9tzj_6uXeIPQREhtQ%3D%3D&q=T+T+Autos+Leicester+Ltd+Reviews&sa=X&ved=2ahUKEwi29fj4q7uSAxU5m68BHZIyJH4Q0bkNegQIMhAF&biw=1366&bih=633&dpr=1&aic=0",
+                "https://www.google.com/search?sca_esv=e376e5018d0e0b4b&rlz=1C5CHFA_enCA1132CA1132&sxsrf=ANbL-n7pVkvqeDV8n172OgLqPbvmStBRJw:1771959677586&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOYkKvkfpNDp-ul2ARXNrRYgmJO4DmtKU_VV_Rz1cRUmsazW4sU0Gbeo0HrPBChxotvfj1j9LMiOkC-NOEnt20VIIv4iK&q=Aura+AutoCare+Reviews&sa=X&ved=2ahUKEwjP9o2Z6PKSAxVsUfUHHWamAdYQ0bkNegQIIxAF&biw=1366&bih=633&dpr=1",
                 "_blank",
                 "noopener,noreferrer"
             );
@@ -39,7 +39,7 @@ export default function ReviewPage() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setLoading(true);
-        setError('');
+        setError(''); // Clear previous error message
 
         const templateParams = {
             to_name: 'Business Owner',
@@ -59,6 +59,7 @@ export default function ReviewPage() {
         };
 
         try {
+            // Send email using EmailJS
             await emailjs.send(
                 EMAILJS_SERVICE_ID,
                 EMAILJS_TEMPLATE_ID,
@@ -66,7 +67,7 @@ export default function ReviewPage() {
                 EMAILJS_PUBLIC_KEY
             );
 
-            console.log('Email sent successfully:', response);
+            // On success, reset the UI and show the success message
             setLoading(false);
             setSubmitted(true);
 
@@ -82,6 +83,7 @@ export default function ReviewPage() {
             }, 4000);
 
         } catch (error) {
+            // Handle failure
             console.error('Email sending failed:', error);
             setError('Failed to send review. Please try again.');
             setLoading(false);
@@ -89,11 +91,11 @@ export default function ReviewPage() {
     };
 
     return (
-        <div className="min-h-screen bg-[#861918]/5 mt-20 flex items-center justify-center p-4 sm:p-6 md:p-8">
+        <div className="min-h-screen bg-[#e80202]/5 mt-20 flex items-center justify-center p-4 sm:p-6 md:p-8">
             <div className="w-full mt-20 max-w-2xl">
-                <div className="bg-white rounded-3xl shadow-2xl shadow-[#861918]/30 overflow-hidden backdrop-blur-sm">
+                <div className="bg-white rounded-3xl shadow-2xl shadow-[#e80202]/30 overflow-hidden backdrop-blur-sm">
                     {/* Header Section */}
-                    <div className="bg-[#861918] px-6 sm:px-8 md:px-12 py-8">
+                    <div className="bg-[#e80202] px-6 sm:px-8 md:px-12 py-8">
                         <div className="text-center">
                             <div className="inline-block mb-4">
                                 <div className="bg-white/20 backdrop-blur-md rounded-full p-4 shadow-lg">
@@ -125,12 +127,12 @@ export default function ReviewPage() {
                                         onClick={() => handleStarClick(star)}
                                         onMouseEnter={() => setHoveredRating(star)}
                                         onMouseLeave={() => setHoveredRating(0)}
-                                        className="transform transition-all duration-200 hover:scale-110 focus:outline-none focus:ring-4 focus:ring-[#861918]/40 rounded-full p-1"
+                                        className="transform transition-all duration-200 hover:scale-110 focus:outline-none focus:ring-4 focus:ring-[#e80202]/40 rounded-full p-1"
                                         aria-label={`Rate ${star} stars`}
                                     >
                                         <svg
                                             className={`w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 transition-all duration-200 ${star <= (hoveredRating || rating)
-                                                ? 'text-[#861918] fill-current drop-shadow-lg'
+                                                ? 'text-[#e80202] fill-current drop-shadow-lg'
                                                 : 'text-gray-300 fill-current'
                                                 }`}
                                             viewBox="0 0 20 20"
@@ -141,7 +143,7 @@ export default function ReviewPage() {
                                 ))}
                             </div>
                             {rating > 0 && (
-                                <p className="text-center mt-4 text-lg sm:text-xl font-semibold text-[#861918] animate-fade-in">
+                                <p className="text-center mt-4 text-lg sm:text-xl font-semibold text-[#e80202] animate-fade-in">
                                     {rating === 1 && "We're sorry to hear that 😢"}
                                     {rating === 2 && "We can do better 😕"}
                                     {rating === 3 && "Thanks for your feedback 🙂"}
@@ -153,8 +155,8 @@ export default function ReviewPage() {
 
                         {/* Error Message */}
                         {error && (
-                            <div className="mb-6 bg-[#861918]/10 border-2 border-[#861918]/30 rounded-xl p-4 animate-fade-in">
-                                <p className="text-[#861918] text-sm sm:text-base text-center font-medium">
+                            <div className="mb-6 bg-[#e80202]/10 border-2 border-[#e80202]/30 rounded-xl p-4 animate-fade-in">
+                                <p className="text-[#e80202] text-sm sm:text-base text-center font-medium">
                                     {error}
                                 </p>
                             </div>
@@ -163,62 +165,62 @@ export default function ReviewPage() {
                         {/* Review Box */}
                         {showReviewBox && !submitted && (
                             <div className="animate-slide-down">
-                                <div className="bg-[#861918]/5 rounded-2xl p-6 sm:p-8 border-2 border-[#861918]/30 shadow-lg">
-                                    <h2 className="text-xl sm:text-2xl font-bold text-[#861918] mb-4 flex items-center gap-2">
-                                        <svg className="w-6 h-6 text-[#861918]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <div className="bg-[#e80202]/5 rounded-2xl p-6 sm:p-8 border-2 border-[#e80202]/30 shadow-lg">
+                                    <h2 className="text-xl sm:text-2xl font-bold text-[#e80202] mb-4 flex items-center gap-2">
+                                        <svg className="w-6 h-6 text-[#e80202]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                                         </svg>
                                         Tell us more
                                     </h2>
-                                    <p className="text-[#861918]/80 mb-6 text-sm sm:text-base">
+                                    <p className="text-[#e80202]/80 mb-6 text-sm sm:text-base">
                                         We'd love to hear your feedback so we can improve our service.
                                     </p>
 
                                     <form onSubmit={handleSubmit} className="space-y-4">
                                         {/* Name, Email, Phone, Review Text Inputs */}
                                         <div>
-                                            <label className="block text-sm font-semibold text-[#861918] mb-2">Your Name *</label>
+                                            <label className="block text-sm font-semibold text-[#e80202] mb-2">Your Name *</label>
                                             <input
                                                 type="text"
                                                 value={name}
                                                 onChange={(e) => setName(e.target.value)}
                                                 required
-                                                className="w-full px-4 py-3 text-black rounded-xl border-2 border-[#861918]/30 focus:border-[#861918] focus:ring-4 focus:ring-[#861918]/20 outline-none text-sm sm:text-base"
+                                                className="w-full px-4 py-3 text-black rounded-xl border-2 border-[#e80202]/30 focus:border-[#e80202] focus:ring-4 focus:ring-[#e80202]/20 outline-none text-sm sm:text-base"
                                                 placeholder="John Doe"
                                             />
                                         </div>
 
                                         <div>
-                                            <label className="block text-sm font-semibold text-[#861918] mb-2">Your Email *</label>
+                                            <label className="block text-sm font-semibold text-[#e80202] mb-2">Your Email *</label>
                                             <input
                                                 type="email"
                                                 value={email}
                                                 onChange={(e) => setEmail(e.target.value)}
                                                 required
-                                                className="w-full px-4 py-3 rounded-xl text-black border-2 border-[#861918]/30 focus:border-[#861918] focus:ring-4 focus:ring-[#861918]/20 outline-none text-sm sm:text-base"
+                                                className="w-full px-4 py-3 rounded-xl text-black border-2 border-[#e80202]/30 focus:border-[#e80202] focus:ring-4 focus:ring-[#e80202]/20 outline-none text-sm sm:text-base"
                                                 placeholder="your.email@example.com"
                                             />
                                         </div>
 
                                         <div>
-                                            <label className="block text-sm font-semibold text-[#861918] mb-2">Phone Number <span className="text-[#861918]/60 text-xs">(Optional)</span></label>
+                                            <label className="block text-sm font-semibold text-[#e80202] mb-2">Phone Number <span className="text-[#e80202]/60 text-xs">(Optional)</span></label>
                                             <input
                                                 type="tel"
                                                 value={phone}
                                                 onChange={(e) => setPhone(e.target.value)}
-                                                className="w-full px-4 py-3 rounded-xl border-2 text-black border-[#861918]/30 focus:border-[#861918] focus:ring-4 focus:ring-[#861918]/20 outline-none text-sm sm:text-base"
+                                                className="w-full px-4 py-3 rounded-xl border-2 text-black border-[#e80202]/30 focus:border-[#e80202] focus:ring-4 focus:ring-[#e80202]/20 outline-none text-sm sm:text-base"
                                                 placeholder="Enter your phone number"
                                             />
                                         </div>
 
                                         <div>
-                                            <label className="block text-sm font-semibold text-[#861918] mb-2">Your Feedback *</label>
+                                            <label className="block text-sm font-semibold text-[#e80202] mb-2">Your Feedback *</label>
                                             <textarea
                                                 value={reviewText}
                                                 onChange={(e) => setReviewText(e.target.value)}
                                                 required
                                                 rows={5}
-                                                className="w-full px-4 py-3 rounded-xl border-2 text-black border-[#861918]/30 focus:border-[#861918] focus:ring-4 focus:ring-[#861918]/20 outline-none resize-none text-sm sm:text-base"
+                                                className="w-full px-4 py-3 rounded-xl border-2 text-black border-[#e80202]/30 focus:border-[#e80202] focus:ring-4 focus:ring-[#e80202]/20 outline-none resize-none text-sm sm:text-base"
                                                 placeholder="Please share your experience with us..."
                                             />
                                         </div>
@@ -226,7 +228,7 @@ export default function ReviewPage() {
                                         <button
                                             type="submit"
                                             disabled={loading}
-                                            className={`w-full bg-[#861918] text-white font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200 text-base sm:text-lg focus:outline-none focus:ring-4 focus:ring-[#861918]/40 ${loading ? 'opacity-70 cursor-not-allowed' : ''}`}
+                                            className={`w-full bg-[#e80202] text-white font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200 text-base sm:text-lg focus:outline-none focus:ring-4 focus:ring-[#e80202]/40 ${loading ? 'opacity-70 cursor-not-allowed' : ''}`}
                                         >
                                             {loading ? 'Sending...' : 'Submit Review'}
                                         </button>
@@ -238,14 +240,14 @@ export default function ReviewPage() {
                         {/* Success Message */}
                         {submitted && (
                             <div className="animate-fade-in">
-                                <div className="bg-[#861918]/10 border-2 border-[#861918]/30 rounded-2xl p-6 sm:p-8 text-center">
-                                    <div className="inline-block bg-[#861918]/20 rounded-full p-4 mb-4">
-                                        <svg className="w-12 h-12 sm:w-16 sm:h-16 text-[#861918]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <div className="bg-[#e80202]/10 border-2 border-[#e80202]/30 rounded-2xl p-6 sm:p-8 text-center">
+                                    <div className="inline-block bg-[#e80202]/20 rounded-full p-4 mb-4">
+                                        <svg className="w-12 h-12 sm:w-16 sm:h-16 text-[#e80202]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                         </svg>
                                     </div>
-                                    <h3 className="text-2xl sm:text-3xl font-bold text-[#861918] mb-2">Thank You!</h3>
-                                    <p className="text-[#861918] text-base sm:text-lg">
+                                    <h3 className="text-2xl sm:text-3xl font-bold text-[#e80202] mb-2">Thank You!</h3>
+                                    <p className="text-[#e80202] text-base sm:text-lg">
                                         Your feedback has been sent to our team.
                                     </p>
                                 </div>

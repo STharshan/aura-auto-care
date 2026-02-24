@@ -1,6 +1,3 @@
-
-
-
 export default function AboutSection() {
   return (
     <section className="w-full bg-black text-white flex flex-col items-center justify-center py-16 px-4 md:px-8">
@@ -9,7 +6,7 @@ export default function AboutSection() {
         <div className="bg-[#1a1a1a] flex items-center justify-center p-8 md:p-12">
           <img
             src="/logo-white.png"
-            alt="TT Auto Battery Service"
+            alt="Aura Auto Care"
             className="w-64 sm:w-72 md:w-80 lg:w-96 object-contain"
           />
         </div>
@@ -19,12 +16,18 @@ export default function AboutSection() {
       <div className="max-w-4xl text-center md:text-left">
         {/* Main Title */}
         <h2 className="text-2xl md:text-3xl font-semibold mb-4">
-          Analysis – Power and Reliability
+          Analysis – Intensive Vehicle Reconditioning
         </h2>
 
         {/* Intro Paragraph */}
         <p className="text-gray-300 leading-relaxed mb-6">
-         We provide complete battery diagnostics, including voltage and alternator testing, to identify issues early. Our team installs premium batteries that meet your vehicle’s power demands for optimal performance.
+          Our deep restoration service is designed for vehicles that require extensive cleaning and cosmetic restoration.
+          This includes deep interior cleaning, exterior decontamination, and paint revitalisation to restore the vehicle
+          to a near-new condition.
+        </p>
+
+        <p className="text-gray-300 leading-relaxed mb-6">
+          Ideal for pre-sale preparation, newly purchased vehicles, or heavily used cars.
         </p>
 
         {/* Subsection: Performance */}
@@ -32,20 +35,15 @@ export default function AboutSection() {
           <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
             Performance{" "}
             <span className="bg-blue-600 text-xs text-white font-medium px-2 py-0.5 rounded-md">
-              TT Auto
+              Aura Auto Care
             </span>
           </h3>
 
           <ul className="text-gray-300 leading-relaxed list-disc list-inside space-y-1">
-            <li>
-              Leicester-based car battery testing and replacement.
-            </li>
-            <li>
-             Same-day fitting with warranty-backed batteries.
-            </li>
-            <li>
-            Corrosion cleaning and terminal protection included.
-            </li>
+            <li>Deep interior cleaning and stain removal</li>
+            <li>Exterior decontamination and tar/iron removal</li>
+            <li>Paint enhancement polishing</li>
+            <li>Trim and plastic restoration treatments</li>
           </ul>
         </div>
 
@@ -53,7 +51,7 @@ export default function AboutSection() {
         <div className="text-left">
           <h3 className="text-lg font-semibold mb-2">Responsiveness</h3>
           <p className="text-gray-300 leading-relaxed">
-          Your vehicle will start strong every time, with consistent electrical performance and long-lasting reliability.
+            We deliver structured, intensive restoration with minimal disruption, providing clear progress updates and professional finishing standards.
           </p>
         </div>
       </div>

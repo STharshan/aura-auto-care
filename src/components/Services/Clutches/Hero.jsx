@@ -41,7 +41,7 @@ export default function HeroSection() {
       {/* === Red & Blue Glowing Backgrounds === */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Red Glow */}
-        <div className="absolute w-[600px] h-[600px] bg-[#ff0033]/30 blur-[140px] rounded-full glowOne top-1/3 left-1/4"></div>
+        <div className="absolute w-[600px] h-[600px] bg-[#e80202]/30 blur-[140px] rounded-full glowOne top-1/3 left-1/4"></div>
         {/* Blue Glow */}
         <div className="absolute w-[500px] h-[500px] bg-[#003cff]/25 blur-[120px] rounded-full glowTwo bottom-1/3 right-1/4"></div>
       </div>
@@ -63,7 +63,7 @@ export default function HeroSection() {
 
           {/* Tags */}
           <div className="flex gap-4 pt-4">
-            <div className="px-5 py-2 bg-gradient-to-t from-[#ff003333] to-[#9999991a] border border-white/10 rounded-lg backdrop-blur-sm">
+            <div className="px-5 py-2 bg-gradient-to-t from-[#e8020233] to-[#9999991a] border border-white/10 rounded-lg backdrop-blur-sm">
               <p className="text-white text-sm font-medium">Clutches</p>
             </div>
             <div className="px-5 py-2 bg-gradient-to-t from-[#003cff33] to-[#9999991a] border border-white/10 rounded-lg backdrop-blur-sm">
@@ -111,7 +111,7 @@ export default function HeroSection() {
             {/* Book Now Button */}
             <a
               href="tel:01162530770"
-              className="inline-block mt-6 px-6 py-3 bg-[#ff0033] hover:bg-[#cc002a] rounded-lg font-medium text-white shadow-[0_8px_30px_rgba(255,0,0,0.5)] border-2 border-[#ff0033]/30 transition-all"
+              className="inline-block mt-6 px-6 py-3 bg-[#e80202] hover:bg-[#cc002a] rounded-lg font-medium text-white shadow-[0_8px_30px_rgba(255,0,0,0.5)] border-2 border-[#e80202]/30 transition-all"
             >
               Book Now
             </a>

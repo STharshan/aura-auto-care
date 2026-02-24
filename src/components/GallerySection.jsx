@@ -14,18 +14,18 @@ import "swiper/css/pagination";
 // Custom Swiper Styles
 const swiperStyles = `
   .swiper-pagination-bullet {
-    background: #861918 !important;
+    background: #e80202 !important;
     opacity: 0.4 !important;
   }
   .swiper-pagination-bullet-active {
-    background: #861918 !important;
+    background: #e80202 !important;
     opacity: 1 !important;
   }
 
   /* Left/Right Arrow Styles */
   .swiper-button-next,
   .swiper-button-prev {
-    color: #861918 !important;
+    color: #e80202 !important;
     font-weight: bold !important;
     transition: 0.3s ease !important;
   }
@@ -53,16 +53,16 @@ export default function GallerySection() {
   }, []);
 
   const galleryItems = [
-    { type: "video", src: "v1.mp4", text: "Engine Diagnostics" },
-    { type: "video", src: "v2.mp4", text: "Electrical Systems" },
-    { type: "video", src: "v3.mp4", text: "Auto Repair" },
-    { type: "video", src: "v4.mp4", text: "Testing & Tools" },
-    { type: "image", src: "v5.jpeg", text: "Diagnostic Equipment" },
-    { type: "video", src: "v6.mp4", text: "Engine Diagnostics" },
-    { type: "video", src: "v7.mp4", text: "Electrical Systems" },
-    { type: "video", src: "v8.mp4", text: "Auto Repair" },
-    { type: "video", src: "v9.mp4", text: "Testing & Tools" },
-    { type: "video", src: "v10.mp4", text: "Testing & Tools" },
+    { type: "image", src: "1.webp", text: "Engine Diagnostics" },
+    { type: "image", src: "2.webp", text: "Electrical Systems" },
+    { type: "image", src: "3.webp", text: "Auto Repair" },
+    { type: "image", src: "4.webp", text: "Testing & Tools" },
+    { type: "image", src: "5.webp", text: "Diagnostic Equipment" },
+    { type: "image", src: "6.webp", text: "Engine Diagnostics" },
+    { type: "image", src: "7.webp", text: "Electrical Systems" },
+    { type: "image", src: "8.webp", text: "Auto Repair" },
+    { type: "image", src: "9.webp", text: "Testing & Tools" },
+    { type: "image", src: "10.webp", text: "Testing & Tools" },
   ];
 
   return (
@@ -88,7 +88,7 @@ export default function GallerySection() {
       <div className="relative z-10 mx-auto max-w-6xl px-6 text-center">
         <p
           data-aos="fade-down"
-          className="inline-block border border-[#ff3b3b33] text-xs tracking-[4px] uppercase px-6 py-1 rounded-full text-[#ff6666] mb-5"
+          className="inline-block border border-[#e4333333] text-xs tracking-[4px] uppercase px-6 py-1 rounded-full text-[#e80202] mb-5"
         >
           Our Gallery
         </p>
@@ -97,7 +97,7 @@ export default function GallerySection() {
           data-aos="zoom-in"
           className="mb-3 text-3xl sm:text-4xl md:text-5xl font-semibold text-white"
         >
-          Experience <span className="italic text-[#FF3B3B]">Our Work</span>
+          Experience <span className="italic text-[#e80202]">Our Work</span>
         </h2>
 
         <p

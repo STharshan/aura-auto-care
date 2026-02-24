@@ -16,10 +16,10 @@ const Home = () => {
             {/* <PartnersCarousel /> */}
             <CreditSection />
             <ProcessSection />
-            <ProductSection />
+            {/* <ProductSection /> */}
             <GallerySection />
             <Review />
-            <ContactSection />
+            {/* <ContactSection /> */}
             <MapSection />
         </div>
     )

@@ -1,68 +1,110 @@
+import React, { useState } from "react";
+import { Instagram, Facebook, ArrowDown } from "lucide-react";
 
+export default function HeroSection({
+  tagline = "Full Service and Excellent Quality",
+  title = "RESTORE YOUR AURA",
+}) {
+  const [showPopup, setShowPopup] = useState(false);
 
-import { FaCircleDot } from "react-icons/fa6";
+  const handleSocialClick = () => {
+    setShowPopup(true);   // Only show popup
+  };
 
-export default function HeroSection() {
+  const handleCancel = () => {
+    setShowPopup(false);  // Close popup
+  };
+
   return (
-    <section id="home" className="relative w-full min-h-screen flex items-center justify-center text-white overflow-hidden">
-      {/* Background Video */}
-      <video
-        className="absolute inset-0 w-full h-full object-cover"
-        src="/bg.mp4"
-        autoPlay
-        loop
-        muted
-        playsInline
-        poster="/fall.png"
-        onError={(e) => (e.currentTarget.style.display = "none")}
-      >
-      </video>
+    <div className="relative h-screen w-full overflow-hidden bg-black">
+      <div className="max-w-7xl mx-auto">
 
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/60"></div>
+        {/* Background Video */}
+        <video
+          className="absolute inset-0 w-full h-full object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source src="/video.mp4" type="video/mp4" />
+        </video>
 
-      {/* Content */}
-      <div className="relative z-10 w-full max-w-7xl px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 flex flex-col justify-center space-y-8 py-24 sm:py-32">
-        {/* Heading */}
-        <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight max-w-xl">
-          Built On Skill. Backed By Experience{" "}
-          <br className="hidden sm:block" />
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/50" />
 
-        </h1>
+        {/* Social Media */}
+        <div className="absolute left-5 md:left-8 top-[30%] flex flex-col gap-8 md:gap-10 z-20">
 
-        {/* Subheading + Button Row */}
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 sm:gap-10">
-          {/* Text */}
-          {/* <div className="space-y-2 sm:space-y-3 text-gray-200 text-base sm:text-lg md:text-xl max-w-2xl">
-            <p className="flex items-center gap-2">
-              <span className="text-[#861918] text-lg sm:text-xl">
-                <FaCircleDot />
-              </span>
-              The UK’s largest independent
-            </p>
-            <span className="text-[#861918]">diesel engine specialist </span>
-          </div> */}
-
-          {/* Buttons */}
-          <div className="group flex items-center shrink-0">
-            {/* Primary Button */}
-            <a href="tel:+441162530770">
-              <button className="border border-[#861918] rounded-full px-6 sm:px-8 py-2 sm:py-3 text-sm sm:text-base md:text-[15px] font-medium transition-all duration-300 group-hover:bg-[#861918]">
-                +44 116 253 0770
-              </button>
-            </a>
-
-            {/* Circle Button */}
-            <button className="w-10 sm:w-12 h-10 sm:h-12 border border-[#861918] rounded-full transform  group-hover:translate-x-1.5 flex items-center justify-center backdrop-blur-md transition-all duration-300 group-hover:bg-[#861918] relative overflow-hidden">
-              <img
-                src="/icon.svg"
-                alt="arrow"
-                className="w-4 sm:w-5 h-4 sm:h-5 "
-              />
-            </button>
+          {/* Instagram */}
+          <div
+            onClick={handleSocialClick}
+            className="flex flex-col items-center gap-3 cursor-pointer hover:scale-110 transition"
+          >
+            <Instagram className="text-white" size={22} />
+            <span
+              className="text-white text-sm"
+              style={{ writingMode: "vertical-rl" }}
+            >
+              Instagram
+            </span>
           </div>
+
+          {/* Facebook */}
+          <div
+            onClick={handleSocialClick}
+            className="flex flex-col items-center gap-3 cursor-pointer hover:scale-110 transition"
+          >
+            <Facebook className="text-white" size={22} />
+            <span
+              className="text-white text-sm"
+              style={{ writingMode: "vertical-rl" }}
+            >
+              Facebook
+            </span>
+          </div>
+
         </div>
+
+        {/* Main Content */}
+        <div className="absolute bottom-[15%] left-8 md:left-16 z-20">
+          <p className="text-white text-[11px] md:text-sm tracking-[0.2em] font-semibold mb-6">
+            {tagline}
+          </p>
+
+          <h1 className="text-primary text-[3.8rem] sm:text-[5rem] md:text-[7rem]  font-bold leading-[0.85]">
+            {title}
+          </h1>
+        </div>
+
+        {/* Scroll Down */}
+        <div className="absolute bottom-8 right-8 md:right-16 flex items-center gap-3 text-white z-20">
+          <span className="text-[10px] md:text-xs tracking-[0.3em]">
+            SCROLL DOWN
+          </span>
+          <ArrowDown className="animate-bounce" size={16} />
+        </div>
+
+        {/* Transparent Popup */}
+        {showPopup && (
+          <div className="fixed inset-0 flex items-center justify-center z-50 backdrop-blur-md bg-black/40">
+            <div className="bg-white/10 backdrop-blur-xl border border-white/20 p-8 rounded-2xl max-w-md text-center text-white shadow-2xl">
+              <p className="mb-6">
+                When you click this button, you’ll be redirected to our official
+                social media page to see updates, content and customer work.
+              </p>
+
+              <button
+                onClick={handleCancel}
+                className="px-6 py-2 bg-white/20 hover:bg-white/30 transition rounded-xl"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        )}
+
       </div>
-    </section>
+    </div>
   );
 }

@@ -37,34 +37,34 @@ export default function Review() {
   const testimonials = [
     {
       title: "Excellent Service & Fair Prices",
-      text: "TT Autos sorted out my car issues (Hyundai i30), excellent customer service, fair prices, really pleased overall. They were recommended to me by a family member, and now I recommend them to others. Now I know where to go in the future. Thank you so much.",
-      name: "Asma",
-      initials: "A",
+      text: "I took my car to Aura Autocare for a 2-step paint correction and ceramic coating, and it's never looked better. Years of swirl marks and cheap car washes left it in a bad state, but Aura has made the paint look brand new! Adam knows what he's doing and treated my car like his own. Highly recommend Aura Autocare for all your detailing needs.",
+      name: "Z I",
+      initials: "Z",
       bg: "#BCFFBB",
     },
     {
       title: "Amazing Garage",
-      text: "Used them for a few years now. Bailed me out multiple times and always upfront with costs and very fair. Family-run business and always feel welcomed by everyone. Keep up the good work lads.",
-      name: "Amar Mohammed",
-      initials: "AM",
+      text: "I took my Audi A5 to Aura, and from start to finish, the process was seamless. I was kept up to date throughout and received pictures of the progress. I chose the ceramic coating to fully protect the car. Upon collection, I was amazed—it felt like I was picking up a brand new car. I'm now on the maintenance plan so my car will always look fresh and protected. Highly recommend Aura to anyone who wants to transform their car's look!",
+      name: "Kamran Samra",
+      initials: "KS",
       bg: "#BBD2FF",
     },
     {
       title: "Highly Recommended",
-      text: "Had a spoiler fitted on my Mk 7.5 Golf R. Excellent service — these guys really know what they're doing. They also helped with an issue I was having with my F1 light. This garage is going to become my regular.",
-      name: "Asma Omar",
-      initials: "AO",
+      text: "I had my Golf GTi Edition 30 fully decontaminated as the paint was dull. It came back with a flawless, factory finish! I was extremely pleased with the service received. I highly recommend Aura for their excellent detailing services.",
+      name: "ZainM",
+      initials: "Z",
       bg: "#F5FFBB",
     },
     {
       title: "Fast & Reasonably Priced",
-      text: "I took my car in today to replace my exhaust and they completed the work in less than two hours with a great result. Very reasonably priced and they fitted me in the next day!",
-      name: "Rav Heer",
-      initials: "RH",
+      text: "Top-notch service—professional and punctual! I booked for a Sunday afternoon, and the technician arrived early, put in great effort, and the result was unbelievable! I'll definitely be using Aura for my maintenance package from now on. Cheers!",
+      name: "Joseph Moore",
+      initials: "JM",
       bg: "#FFBBF0",
     },
   ];
-
+  
   return (
     <section
       ref={sectionRef}
@@ -74,7 +74,7 @@ export default function Review() {
       {/* Background - Fixed with responsive positioning */}
       <div className="absolute inset-0">
         <img
-          src="review.png"
+          src="logo-white.png"
           alt="Hear it from our clients"
           className="w-full h-full object-top sm:object-center md:object-center"
           style={{
@@ -86,7 +86,7 @@ export default function Review() {
 
       {/* Heading */}
       <div className="relative z-10 text-center pt-20 sm:pt-24 md:pt-32 pb-8 sm:pb-10 md:pb-12 px-4">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-[#861918]">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-[#e80202]">
           Hear it from our clients
         </h2>
       </div>
@@ -121,11 +121,11 @@ export default function Review() {
       {/* === CTA BUTTON TO GOOGLE REVIEWS === */}
       <div className="relative z-10 pb-20 sm:pb-24 md:pb-28 text-center px-4">
         <a
-          href="https://www.google.com/search?sca_esv=0cca2ee0e671afa3&rlz=1C1KNTJ_enLK1089LK1089&sxsrf=ANbL-n7WIJZwBQNu_qH3DMHp4etM__VzYQ:1770053718396&si=AL3DRZFIhG6pAqfNLal55wUTwygCG0fClF3UxiOmgw9Hq7nbWWvnlxyOtSbAodJocC3AZ7djdMLPvp1Ctj8ib8Ht94tYz-_tSKcdX1gQEKf14KIZlioCF97M0diIsgLsSNjFiIGyM5-Thur0U9tzj_6uXeIPQREhtQ%3D%3D&q=T+T+Autos+Leicester+Ltd+Reviews&sa=X&ved=2ahUKEwi29fj4q7uSAxU5m68BHZIyJH4Q0bkNegQIMhAF&biw=1366&bih=633&dpr=1&aic=0" 
+          href="https://www.google.com/search?sca_esv=e376e5018d0e0b4b&rlz=1C5CHFA_enCA1132CA1132&sxsrf=ANbL-n6LkZG4NnQYFfr-JkzOI7DA6bTR5g:1771957274283&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOYkKvkfpNDp-ul2ARXNrRYgmJO4DmtKU_VV_Rz1cRUmsazW4sU0Gbeo0HrPBChxotvfj1j9LMiOkC-NOEnt20VIIv4iK&q=Aura+AutoCare+Reviews&sa=X&ved=2ahUKEwipgZCf3_KSAxX5UGcHHT02IaEQ0bkNegQIIhAF&biw=1366&bih=633&dpr=1"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block px-8 sm:px-10 py-2.5 sm:py-3 text-base sm:text-lg font-semibold rounded-full 
-          bg-[#861918] hover:bg-[#a31f1d] transition-all duration-300 shadow-lg"
+          bg-[#e80202] hover:bg-[#a31f1d] transition-all duration-300 shadow-lg"
         >
           Google Review
         </a>

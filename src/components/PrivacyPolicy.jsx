@@ -3,7 +3,7 @@ import React from 'react';
 const PrivacyPolicy = () => {
     return (
         <div className="mx-auto px-4 py-12 sm:px-6 lg:px-16 bg-black text-white">
-            <h1 className="text-4xl font-semibold text-center mb-8 mt-15">Privacy Policy</h1>
+            <h1 className="text-4xl font-semibold text-center mb-8 pt-10">Privacy Policy</h1>
             <p className="text-center text-white">Last updated: 09/09/25</p>
 
             <div className="mt-8 space-y-6">
@@ -44,7 +44,6 @@ const PrivacyPolicy = () => {
                     </p>
                     <ul className="list-disc ml-6 text-white">
                         <li>Respond to inquiries and provide quotes</li>
-                        <li>Deliver scaffolding services</li>
                         <li>Communicate with you about your project</li>
                         <li>Maintain business records and comply with legal requirements</li>
                     </ul>
@@ -110,10 +109,10 @@ const PrivacyPolicy = () => {
                         If you have any questions about this Privacy Policy or how we handle your personal data, please contact us:
                     </p>
                     <div className="text-white">
-                        <p><strong>TT Automotive</strong></p>
-                        <p>Email: <a href="mailto:ttautosgarage@gmail.com" className="text-[#861918] hover:underline">ttautosgarage@gmail.com</a></p>
-                        <p>Phone: 01509 633300</p>
-                        <p>Address: Unit 6, Royal Way, Off Belton Road, Loughborough, Leicestershire, LE11 5XR</p>
+                        <p><strong>Aura Auto Care</strong></p>
+                        <p>Email: <a href="mailto:auraautocare1@gmail.com" className="text-[#e80202] hover:underline">auraautocare1@gmail.com</a></p>
+                        <p>Phone: +44 7305 794353</p>
+                        <p>Address: Nottingham, East midlands, United Kingdom</p>
                     </div>
                     <p className="mt-2 text-white">
                         If you are not satisfied with our response, you have the right to lodge a complaint with the{' '}
@@ -121,7 +120,7 @@ const PrivacyPolicy = () => {
                             href="https://ico.org.uk/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-[#861918] hover:underline"
+                            className="text-[#e80202] hover:underline"
                         >
                             Information Commissioner’s Office (ICO)
                         </a>

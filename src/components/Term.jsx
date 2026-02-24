@@ -5,7 +5,7 @@ const TermsConditions = () => {
   return (
     <section className="bg-black text-white mx-auto px-4 py-8">
           <div className="max-w-6xl mx-auto">
-              <h1 className="text-3xl font-semibold text-center mb-6 mt-15">Website Terms of Use</h1>
+              <h1 className="text-3xl font-semibold text-center mb-6 pt-15">Website Terms of Use</h1>
               <p className="text-center text-gray-200">Last updated: 09/09/25</p>
 
               <div className="mt-8 space-y-6">
@@ -28,7 +28,7 @@ const TermsConditions = () => {
                   <section>
                       <h2 className="text-2xl font-medium">3. Intellectual Property</h2>
                       <p className="text-white">
-                          All content on this website (including text, images, graphics, and logos) is owned by or licensed to  TT Automotive.
+                          All content on this website (including text, images, graphics, and logos) is owned by or licensed to  Aura Auto Care.
                           You may view, download, and print content for personal use only.
                           You must not copy, reproduce, or distribute our website content without prior written consent.
                       </p>
@@ -77,10 +77,10 @@ const TermsConditions = () => {
                           If you have any questions about these Terms of Use, please contact us:
                       </p>
                       <div className="text-white">
-                          <p><strong>TT Automotive</strong></p>
-                          <p>Email: <a href="mailto: ttautosgarage@gmail.com" className="text-[#861918] hover:underline"> ttautosgarage@gmail.com</a></p>
-                          <p>Phone: 01509 633300</p>
-                          <p>Address: Unit 6, Royal Way, Off Belton Road, Loughborough, Leicestershire, LE11 5XR</p>
+                          <p><strong>Aura Auto Care</strong></p>
+                          <p>Email: <a href="mailto: auraautocare1@gmail.com" className="text-[#e80202] hover:underline"> auraautocare1@gmail.com</a></p>
+                          <p>Phone: +44 7305 794353</p>
+                          <p>Address: Nottingham, East midlands, United Kingdom</p>
                       </div>
                   </section>
               </div>

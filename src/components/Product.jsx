@@ -44,9 +44,9 @@ export default function CarCarePackages() {
       price: "£90",
       features: premiumFeatures,
       btnText: "Book Interim Service",
-      iconColor: "text-[#861918]",
-      bgColor: "bg-[#861918]/20",
-      borderColor: "border-[#861918]/30",
+      iconColor: "text-[#e80202]",
+      bgColor: "bg-[#e80202]/20",
+      borderColor: "border-[#e80202]/30",
     },
     {
       type: "FULL SERVICE",
@@ -67,8 +67,8 @@ export default function CarCarePackages() {
         <div className="space-y-8 lg:sticky lg:top-24 lg:h-fit self-start">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-0.5 w-12 bg-[#861918]"></div>
-              <h6 className="text-xs sm:text-sm font-semibold text-[#861918] uppercase tracking-wider">
+              <div className="h-0.5 w-12 bg-[#e80202]"></div>
+              <h6 className="text-xs sm:text-sm font-semibold text-[#e80202] uppercase tracking-wider">
                 Discover Our Complete Car Care
               </h6>
             </div>
@@ -90,11 +90,11 @@ export default function CarCarePackages() {
                 rel="noopener noreferrer"
                 className="group flex items-center gap-4 border border-white/10 rounded-xl p-4 bg-[#111]/70 hover:bg-white/10 transition-all duration-300"
               >
-                <div className="flex items-center justify-center h-10 w-10 text-[#861918]">
+                <div className="flex items-center justify-center h-10 w-10 text-[#e80202]">
                   {link.icon}
                 </div>
                 <div>
-                  <h6 className="text-base font-semibold group-hover:text-[#861918] transition-colors">
+                  <h6 className="text-base font-semibold group-hover:text-[#e80202] transition-colors">
                     {link.title}
                   </h6>
                 </div>
@@ -117,7 +117,7 @@ export default function CarCarePackages() {
           {packages.map((pkg, idx) => (
             <div
               key={idx}
-              className="border border-white/10 rounded-2xl bg-linear-to-br from-[#151515] to-[#0b0b0b] backdrop-blur-lg p-6 sm:p-8 hover:border-[#861918]/40 hover:shadow-[0_0_25px_rgba(134,25,24,0.25)] transition-all duration-500"
+              className="border border-white/10 rounded-2xl bg-linear-to-br from-[#151515] to-[#0b0b0b] backdrop-blur-lg p-6 sm:p-8 hover:border-[#e80202]/40 hover:shadow-[0_0_25px_rgba(134,25,24,0.25)] transition-all duration-500"
             >
               <div className="flex flex-wrap items-center gap-3 mb-6">
                 <h6 className="text-sm font-semibold text-gray-400">{pkg.type}</h6>
@@ -125,7 +125,7 @@ export default function CarCarePackages() {
 
               <div className="border border-white/10 rounded-lg p-5 mb-6 flex flex-wrap items-center justify-between bg-[#111]">
                 <h6 className="text-sm font-semibold text-gray-400">PRICES STARTING FROM</h6>
-                <h3 className="text-4xl sm:text-5xl font-bold text-[#861918]">{pkg.price}</h3>
+                <h3 className="text-4xl sm:text-5xl font-bold text-[#e80202]">{pkg.price}</h3>
               </div>
 
               <div className="space-y-3 mb-6">
@@ -147,7 +147,7 @@ export default function CarCarePackages() {
               <HashLink
                 to="/#contact"
                 smooth
-                className="w-full block bg-[#861918] hover:bg-[#a51f1e] text-white font-semibold py-3 rounded-full transition-all duration-300 border-2 border-[#861918] hover:border-[#a51f1e] shadow-lg shadow-[#861918]/40 hover:shadow-[#861918]/60 text-sm sm:text-base text-center"
+                className="w-full block bg-[#e80202] hover:bg-[#a51f1e] text-white font-semibold py-3 rounded-full transition-all duration-300 border-2 border-[#e80202] hover:border-[#a51f1e] shadow-lg shadow-[#e80202]/40 hover:shadow-[#e80202]/60 text-sm sm:text-base text-center"
               >
                 {pkg.btnText}
               </HashLink>
