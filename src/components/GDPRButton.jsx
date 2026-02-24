@@ -48,7 +48,7 @@ export default function GDPRConsent() {
           <p className="mb-3">
             <a
               href="/privacy"
-              className="underline text-[#e80202] hover:text-[#070981] "
+              className="underline text-[#e80202] hover:text-[#e43333] "
             >
               See our Privacy Policy
             </a>
@@ -57,7 +57,7 @@ export default function GDPRConsent() {
           <div className="flex flex-col sm:flex-row justify-center gap-3">
             <button
               onClick={handleReject}
-              className="bg-[#e80202] text-white px-4 py-2 rounded text-sm hover:bg-[#070981]  transition"
+              className="bg-[#e80202] text-white px-4 py-2 rounded text-sm hover:bg-[#e43333]  transition"
             >
               Reject
             </button>
