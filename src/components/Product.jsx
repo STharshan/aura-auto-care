@@ -1,4 +1,4 @@
-import { Check, Phone, Mail, MapPin, CircleCheckBig } from "lucide-react";
+import { Phone, Mail, MapPin, CircleCheckBig } from "lucide-react";
 import { HashLink } from "react-router-hash-link";
 
 export default function ProtectionPackages() {
@@ -8,7 +8,7 @@ export default function ProtectionPackages() {
       type: "Essential 3 Year Protection Package",
       price: "£450",
       description:
-        "Perfect for: New cars or daily drivers needing long-term gloss and easy maintenance.",
+        "New cars or daily drivers needing long-term gloss and easy maintenance.",
       features: [
         "Full exterior wash & decontamination (iron & tar removal, clay bar treatment)",
         "Single-stage machine polish to enhance gloss",
@@ -52,7 +52,7 @@ export default function ProtectionPackages() {
     {
       type: "Signature 7 Year Protection Package",
       price: "£750",
-      description: "Perfect for: Show vehicles or owners wanting the ultimate, full-body ceramic protection.",
+      description: "Show vehicles or owners wanting the ultimate, full-body ceramic protection.",
       features: [
         "Multi-Stage Wash inside & out with Full decontamination",
         "Full multi-stage paint correction for defect removal & mirror clarity",
@@ -138,7 +138,7 @@ export default function ProtectionPackages() {
               </div>
 
               <div className="border border-white/10 rounded-lg p-5 mb-6 flex flex-wrap items-center justify-between bg-[#111]">
-                <h6 className="text-sm font-semibold text-gray-400">PRICE</h6>
+                <h6 className="text-sm font-semibold text-gray-400">PACKAGE</h6>
                 <h3 className="text-4xl sm:text-5xl font-bold text-[#e80202]">{pkg.price}</h3>
               </div>
 
