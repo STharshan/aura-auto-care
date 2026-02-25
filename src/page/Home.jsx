@@ -1,4 +1,4 @@
-import React from 'react'
+
 import CreditSection from "../components/CreditSection"
 import HeroSection from "../components/HeroSection"
 import PartnersCarousel from "../components/Partner"

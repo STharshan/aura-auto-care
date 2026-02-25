@@ -1,82 +1,104 @@
-
-import { Check, X, Phone, Mail, MessageCircle, MapPin } from "lucide-react";
+import { Check, Phone, Mail, MapPin, CircleCheckBig } from "lucide-react";
 import { HashLink } from "react-router-hash-link";
 
-export default function CarCarePackages() {
-  // Feature data
-  const premiumFeatures = [
-    { icon: <Check className="h-5 w-5" />, title: "Oil Filter Replacement:", description: "Replace old oil filter to maintain engine efficiency." },
-    { icon: <Check className="h-5 w-5" />, title: "Fluid Top-Ups:", description: "Screen wash, coolant, and essential levels refilled." },
-    { icon: <Check className="h-5 w-5" />, title: "Brake Fluid & System Check:", description: "Ensure braking performance and safety." },
-    { icon: <Check className="h-5 w-5" />, title: "Steering Fluid Inspection:", description: "Check and maintain correct steering fluid levels." },
-    { icon: <Check className="h-5 w-5" />, title: "Full Vehicle Health Check:", description: "Comprehensive inspection for early issue detection." },
-    { icon: <Check className="h-5 w-5" />, title: "Engine Bay Clean:", description: "Professional cleaning to keep your engine area spotless." },
-    { icon: <Check className="h-5 w-5" />, title: "Tyre Pressure Adjustment:", description: "Correct tyre pressure for optimal safety and fuel economy." },
-  ];
-
-  const basicFeatures = [
-    { icon: <Check className="h-5 w-5" />, title: "Everything Included in the Interim Service:", description: "All checks, top-ups, and cleaning services from the Interim Package." },
+export default function ProtectionPackages() {
+  // Protection Package Data
+  const protectionPackages = [
     {
-      icon: <Check className="h-5 w-5" />,
-      title: "Comprehensive Filter Replacement:",
-      description: (
-        <>
-          Petrol Vehicles: Engine oil filter, air filter, cabin/pollen filter, and spark plugs replaced. <br />
-          Diesel Vehicles: Engine oil filter, air filter, cabin/pollen filter, and fuel filter replaced.
-        </>
-      )
-    },
-    { icon: <Check className="h-5 w-5" />, title: "Engine Oil Change:", description: "Fresh, high-grade engine oil for smoother performance and longer engine life." },
-    { icon: <Check className="h-5 w-5" />, title: "Fluid Top-Ups:", description: "All key fluids replenished — brake fluid, steering fluid, screen wash, and coolant — ensuring optimal performance and safety." },
-  ];
-
-  // Contact links
-  const contactLinks = [
-    { icon: <Phone className="h-6 w-6" />, title: "+44 116 253 0770", href: "tel:01162530770" },
-    { icon: <Mail className="h-6 w-6" />, title: "ttautosgarage@gmail.com", href: "mailto:ttautosgarage@gmail.com" },
-    { icon: <MapPin className="h-6 w-6" />, title: "Our Location", href: "https://maps.app.goo.gl/Q15XjM78uKPFrWrS6" },
-  ];
-
-  // Package data
-  const packages = [
-    {
-      type: "INTERIM SERVICE",
-      price: "£90",
-      features: premiumFeatures,
-      btnText: "Book Interim Service",
+      type: "Essential 3 Year Protection Package",
+      price: "£450",
+      description:
+        "Perfect for: New cars or daily drivers needing long-term gloss and easy maintenance.",
+      features: [
+        "Full exterior wash & decontamination (iron & tar removal, clay bar treatment)",
+        "Single-stage machine polish to enhance gloss",
+        "Application of Carbon Collective Platinum Ceramic Coating on paintwork (up to 3-year durability)",
+        "Carbon Collective Platinum Wheels coating applied to faces of wheels",
+        "Carbon Collective Glass Coating applied to all exterior glass",
+        "Carbon Collective Trim Coating applied to exterior plastics and trims",
+      ],
+      benefits: [
+        "Deep, glossy finish that stays cleaner for longer",
+        "UV & chemical protection against environmental damage",
+        "Hydrophobic surface for effortless washing",
+      ],
+      btnText: "Book Essential Package",
       iconColor: "text-[#e80202]",
       bgColor: "bg-[#e80202]/20",
       borderColor: "border-[#e80202]/30",
     },
     {
-      type: "FULL SERVICE",
-      price: "£140",
-      features: basicFeatures,
-      btnText: "Book Full Service",
+      type: "Advanced 5 Year Protection Package",
+      price: "£600",
+      description: "Enthusiasts seeking premium protection, durability, and a show-car finish.",
+      features: [
+        "Multi-stage wash inside & out with full decontamination",
+        "1–2 stage paint correction for improved clarity and depth",
+        "Application of Carbon Collective Nero Self-Healing Ceramic Coating (up to 5-year protection)",
+        "Carbon Collective Platinum Wheels coating on faces & barrels",
+        "Carbon Collective Glass coating on all exterior glass",
+        "Carbon Collective trim Coating on exterior plastics & trims",
+      ],
+      benefits: [
+        "Ultra-deep gloss with swirl & light scratch resistance",
+        "Long-lasting protection on all exterior surfaces",
+        "Enhanced chemical, UV, and heat resistance",
+      ],
+      btnText: "Book Advanced Package",
       iconColor: "text-red-500",
       bgColor: "bg-red-500/20",
       borderColor: "border-red-500/30",
     },
+    {
+      type: "Signature 7 Year Protection Package",
+      price: "£750",
+      description: "Perfect for: Show vehicles or owners wanting the ultimate, full-body ceramic protection.",
+      features: [
+        "Multi-Stage Wash inside & out with Full decontamination",
+        "Full multi-stage paint correction for defect removal & mirror clarity",
+        "Application of Carbon Collective Molecule 9H Coating topped",
+        "Carbon Collective Platinum Wheels coating on faces, barrels & calipers",
+        "Carbon Collective Glass Coating for superior visibility",
+        "Carbon Collective exterior Coating on trims & plastics",
+        "Carbon Collective Seat & Fabric Protect and Leather Guard for interior protection",
+      ],
+      benefits: [
+        "Complete vehicle protection, inside and out",
+        "Unrivalled gloss and depth of finish",
+        "Longest-lasting ceramic system in the Carbon Collective range",
+      ],
+      btnText: "Book Signature Package",
+      iconColor: "text-yellow-500",
+      bgColor: "bg-yellow-500/20",
+      borderColor: "border-yellow-500/30",
+    },
+  ];
+
+  // Contact links
+  const contactLinks = [
+    { icon: <Phone className="h-6 w-6" />, title: "+44 7305 794353", href: "tel:+447305794353" },
+    { icon: <Mail className="h-6 w-6" />, title: "auraautocare1@gmail.com", href: "mailto:auraautocare1@gmail.com" },
+    { icon: <MapPin className="h-6 w-6" />, title: "Our Location",   href:"https://maps.app.goo.gl/e1S2etqinvH3EkZr7" },
   ];
 
   return (
     <section id="package" className="scroll-m-10 bg-linear-to-b from-black via-[#0b0b0b] to-[#1a1a1a] text-white py-16 px-4 sm:px-6 lg:px-12">
       <div className="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-[0.9fr_1.1fr] gap-12">
-
+        
         {/* LEFT COLUMN */}
         <div className="space-y-8 lg:sticky lg:top-24 lg:h-fit self-start">
           <div>
             <div className="flex items-center gap-3 mb-4">
               <div className="h-0.5 w-12 bg-[#e80202]"></div>
               <h6 className="text-xs sm:text-sm font-semibold text-[#e80202] uppercase tracking-wider">
-                Discover Our Complete Car Care
+                Discover Our Complete Car Protection Packages
               </h6>
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold leading-tight">
-              Essential Service Packages
+              Premium Protection Packages for Your Vehicle
             </h2>
             <p className="text-gray-400 mt-3 leading-relaxed">
-              Choose from our professionally designed car care packages to keep your vehicle running at its best.
+              Choose from our top-tier protection packages to keep your vehicle in showroom condition for years.
             </p>
           </div>
 
@@ -101,20 +123,12 @@ export default function CarCarePackages() {
               </a>
             ))}
           </div>
-
-          {/* Scroll Hint - Only visible on desktop when packages section is long */}
-          <div className="hidden lg:flex items-center gap-2 text-gray-500 text-sm">
-            <svg className="h-4 w-4 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-            </svg>
-            <span>Scroll down to see all packages</span>
-          </div>
         </div>
 
         {/* RIGHT COLUMN */}
         <div className="flex flex-col gap-10 mt-10 lg:mt-0">
           {/* Packages */}
-          {packages.map((pkg, idx) => (
+          {protectionPackages.map((pkg, idx) => (
             <div
               key={idx}
               className="border border-white/10 rounded-2xl bg-linear-to-br from-[#151515] to-[#0b0b0b] backdrop-blur-lg p-6 sm:p-8 hover:border-[#e80202]/40 hover:shadow-[0_0_25px_rgba(134,25,24,0.25)] transition-all duration-500"
@@ -124,33 +138,45 @@ export default function CarCarePackages() {
               </div>
 
               <div className="border border-white/10 rounded-lg p-5 mb-6 flex flex-wrap items-center justify-between bg-[#111]">
-                <h6 className="text-sm font-semibold text-gray-400">PRICES STARTING FROM</h6>
+                <h6 className="text-sm font-semibold text-gray-400">PRICE</h6>
                 <h3 className="text-4xl sm:text-5xl font-bold text-[#e80202]">{pkg.price}</h3>
               </div>
 
               <div className="space-y-3 mb-6">
-                {pkg.features.map((feature, index) => (
-                  <div
-                    key={index}
-                    className="flex gap-4 border border-white/10 rounded-lg p-3 sm:p-4 items-start hover:bg-white/5 transition-all duration-300"
-                  >
-                    <div className={`shrink-0 h-9 w-9 sm:h-10 sm:w-10 rounded-full ${pkg.bgColor} flex items-center justify-center ${pkg.borderColor}`}>
-                      <div className={pkg.iconColor}>{feature.icon}</div>
-                    </div>
-                    <p className="text-gray-300 text-sm leading-relaxed">
-                      <span className="text-white font-semibold">{feature.title}</span> {feature.description}
-                    </p>
-                  </div>
-                ))}
+                <div className="text-sm text-gray-300">
+                  <strong className="text-white">Perfect for: </strong> {pkg.description}
+                </div>
+                <div>
+                  <strong className="text-white">Features:</strong>
+                  <ul className="space-y-2 mt-3 text-gray-300">
+                    {pkg.features.map((feature, index) => (
+                      <li key={index} className="flex items-start gap-2">
+                        <CircleCheckBig  className="h-5 w-5 text-[#e80202]" />
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <strong className="text-white">Benefits:</strong>
+                  <ul className="space-y-2 mt-3 text-gray-300">
+                    {pkg.benefits.map((benefit, index) => (
+                      <li key={index} className="flex items-start gap-2">
+                        <CircleCheckBig className="h-5 w-5 text-[#e80202]" />
+                        {benefit}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
 
-              <HashLink
+              {/* <HashLink
                 to="/#contact"
                 smooth
                 className="w-full block bg-[#e80202] hover:bg-[#a51f1e] text-white font-semibold py-3 rounded-full transition-all duration-300 border-2 border-[#e80202] hover:border-[#a51f1e] shadow-lg shadow-[#e80202]/40 hover:shadow-[#e80202]/60 text-sm sm:text-base text-center"
               >
                 {pkg.btnText}
-              </HashLink>
+              </HashLink> */}
             </div>
           ))}
         </div>
