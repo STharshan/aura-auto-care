@@ -1,6 +1,7 @@
 import React from "react";
 import { Instagram, Facebook } from "lucide-react";
 import { BsTiktok } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -37,7 +38,6 @@ const Footer = () => {
               <li><a href="/" className="hover:text-white transition">Home</a></li>
               <li><a href="/about" className="hover:text-white transition">About Us</a></li>
               <li><a href="/service" className="hover:text-white transition">Service</a></li>
-              <li><a href="/contact" className="hover:text-white transition">Contact</a></li>
             </ul>
           </div>
 
@@ -100,8 +100,8 @@ const Footer = () => {
         <div>Powered by <a href="https://www.ansely.co.uk/" className="hover:underline hover:text-[#F21B23]">Ansely</a></div>
 
         <div className="flex gap-6">
-          <a href="/privacy" className="underline hover:text-white transition">Privacy Policy</a>
-          <a href="/terms" className="underline hover:text-white transition">Terms of Service</a>
+          <Link to="/privacy" className="underline hover:text-white transition">Privacy Policy</Link>
+          <Link to="/terms" className="underline hover:text-white transition">Terms of Service</Link>
         </div>
       </div>
     </footer>
