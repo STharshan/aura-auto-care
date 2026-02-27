@@ -12,14 +12,14 @@ import GallerySection from "../components/GallerySection"
 const Home = () => {
     return (
         <div>
-            {/* <HeroSection /> */}
+            <HeroSection />
             {/* <PartnersCarousel /> */}
-            {/* <CreditSection />
-            <ProcessSection /> */}
+            <CreditSection />
+            <ProcessSection />
             {/* <ProductSection /> */}
-            {/* <GallerySection /> */}
+            <GallerySection />
             <Review />
-            <ContactSection />
+            {/* <ContactSection /> */}
             <MapSection />
         </div>
     )
