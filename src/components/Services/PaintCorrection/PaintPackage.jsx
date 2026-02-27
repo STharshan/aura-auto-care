@@ -12,8 +12,8 @@ const iconMap = {
 // Data extracted directly from the provided flyer image
 const contentData = {
     detail: {
-        tittle: "Our Services",
-        desc: "Professional Car Valeting & Detailing"
+        tittle: "Paint Correction",
+        desc: "Exceptional gloss, swirl-free finish."
     },
     contactLinks: [
         { title: "07305794353", href: "tel:07305794353", icon: "Phone" },
@@ -22,55 +22,16 @@ const contentData = {
     ],
     packages: [
         {
-            type: "MINI VALET",
-            price: "£70",
-            btnText: "Book Mini Valet",
+            type: "PAINT CORRECTION",
+            price: "Enquire",
+            btnText: "Book Correction",
             bgColor: "bg-red-900/10",
             borderColor: "border-red-900/20",
-            iconColor: "text-[#861918]",
+            iconColor: "text-[#B62025] dark:text-[#FF4B4B]",
             features: [
-                { icon: <Zap size={18} />, title: "Exterior:", description: "Hand wash & rinse, wheel and tire clean, and tire shine applied." },
-                { icon: <Sparkles size={18} />, title: "Interior:", description: "Vacuum (seats, carpets, mats, boot), windows cleaned, and surfaces wiped." },
-                { icon: <Shield size={18} />, title: "Best For:", description: "Weekly or bi-weekly upkeep to keep your car road-ready." }
-            ]
-        },
-        {
-            type: "FULL VALET",
-            price: "£105",
-            btnText: "Book Full Valet",
-            bgColor: "bg-red-900/10",
-            borderColor: "border-red-900/20",
-            iconColor: "text-[#861918]",
-            features: [
-                { icon: <Droplets size={18} />, title: "Deep Clean:", description: "In-depth interior and exterior clean with no surface left untouched." },
-                { icon: <Sparkles size={18} />, title: "Restoration:", description: "Brings back the feel, smell, and look of a well-cared-for vehicle." },
-                { icon: <Shield size={18} />, title: "Occasion:", description: "Perfect for preparing for a sale or a special occasion." }
-            ]
-        },
-        {
-            type: "DECON DETAIL",
-            price: "£125",
-            btnText: "Book Decon Detail",
-            bgColor: "bg-red-900/10",
-            borderColor: "border-red-900/20",
-            iconColor: "text-[#861918]",
-            features: [
-                { icon: <Droplets size={18} />, title: "Chemical Decon:", description: "Iron and tar removers to dissolve embedded particles." },
-                { icon: <Zap size={18} />, title: "Mechanical Decon:", description: "Clay bar or mitt to safely lift remaining surface contaminants." },
-                { icon: <Shield size={18} />, title: "Result:", description: "Restores smoothness and clarity that regular washing can't touch." }
-            ]
-        },
-        {
-            type: "PAINT RESTORATION",
-            price: "£195+",
-            btnText: "Book Restoration",
-            bgColor: "bg-red-900/10",
-            borderColor: "border-red-900/20",
-            iconColor: "text-[#861918]",
-            features: [
-                { icon: <Sparkles size={18} />, title: "Single Stage (£195):", description: "Paint enhancement to significantly improve gloss and depth." },
-                { icon: <Zap size={18} />, title: "2 Stage (£250):", description: "Intensive correction for heavy swirl marks, scratches, and oxidation." },
-                { icon: <Shield size={18} />, title: "Finish:", description: "Restores a deep, mirror-like shine to your vehicle's paintwork." }
+                { icon: <Zap size={18} />, title: "Correction:", description: "Removes swirl marks and light/moderate scratches." },
+                { icon: <Droplets size={18} />, title: "Preparation:", description: "Requires deep clean and clay bar decontamination." },
+                { icon: <Sparkles size={18} />, title: "Finish:", description: "Machine polished for a safe, imperfection-free surface." }
             ]
         }
     ]
