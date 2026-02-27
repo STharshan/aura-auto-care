@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const HOURS = [
-  { day: "Monday - Sunday", time: "9:00 AM – 7:30 PM" },
+  { day: "Monday - Sunday", time: "9:00 AM – 7:30 PM" },
 ];
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
@@ -11,6 +11,17 @@ const PHONE_REGEX =
   /^(?:\+?44\s?7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3}$|^[0-9+\-\s()]{7,}$/;
 
 const WHATSAPP_NUMBER = "447305794353"; // +44 7305 794353
+
+// Helper: return AOS props only on desktop (>= 1024px)
+const aosProps = (aosType, delay) => {
+  if (typeof window !== "undefined" && window.innerWidth >= 1024) {
+    return {
+      "data-aos": aosType,
+      ...(delay ? { "data-aos-delay": String(delay) } : {}),
+    };
+  }
+  return {};
+};
 
 export default function ContactSection() {
   const [fields, setFields] = useState({
@@ -28,7 +39,11 @@ export default function ContactSection() {
   const [status, setStatus] = useState({ state: "idle", message: "" });
 
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    // Disable AOS animations on mobile (screens smaller than 1024px)
+    const isMobile = window.innerWidth < 1024;
+    if (!isMobile) {
+      AOS.init({ duration: 1000 });
+    }
   }, []);
 
   const validateField = (name, value) => {
@@ -82,7 +97,6 @@ export default function ContactSection() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Mark all as touched
     setTouched({ name: true, email: true, phone: true, message: true });
 
     if (!validateAll()) {
@@ -95,7 +109,6 @@ export default function ContactSection() {
       return;
     }
 
-    // Build WhatsApp message
     const lines = [
       `New Enquiry from Website`,
       ``,
@@ -145,14 +158,14 @@ export default function ContactSection() {
     >
       <div className="max-w-6xl mx-auto">
         <h2
-          data-aos="fade-up"
+          {...aosProps("fade-up")}
           className="text-center text-2xl md:text-3xl font-bold"
           style={{ color: "#e80202" }}
         >
           Ready to Restore Your Car's Look?
         </h2>
         <p
-          data-aos="fade-up"
+          {...aosProps("fade-up")}
           className="text-center mt-2 max-w-2xl mx-auto"
           style={{ color: "#a3a3a3" }}
         >
@@ -164,7 +177,7 @@ export default function ContactSection() {
         <div className="mt-10 grid md:grid-cols-2 gap-8">
           {/* Left Side – Info */}
           <div
-            data-aos="fade-right"
+            {...aosProps("fade-right")}
             className="rounded-2xl shadow-lg p-6 md:p-8 transition-colors duration-300"
             style={{ backgroundColor: "#111111" }}
           >
@@ -229,7 +242,7 @@ export default function ContactSection() {
 
           {/* Right Side – Form */}
           <div
-            data-aos="fade-left"
+            {...aosProps("fade-left")}
             className="rounded-2xl shadow-lg p-6 md:p-8 transition-colors duration-300"
             style={{ backgroundColor: "#111111" }}
           >
@@ -382,7 +395,6 @@ export default function ContactSection() {
                   cursor: isSending ? "not-allowed" : "pointer",
                 }}
               >
-                {/* WhatsApp icon */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
