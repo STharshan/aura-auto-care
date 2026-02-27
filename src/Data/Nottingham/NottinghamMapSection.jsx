@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   MapContainer,
   TileLayer,
@@ -20,78 +20,71 @@ L.Icon.Default.mergeOptions({
     "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png"
 });
 
-/* ---------------- Area Coordinates ---------------- */
+
 const areaCoordinates = {
-  Prenton: { lat: 53.374, lng: -3.020 },
-  Oxton: { lat: 53.391, lng: -3.010 },
-  Claughton: { lat: 53.3871, lng: -3.0095 },
-  "Rock Ferry": { lat: 53.384, lng: -3.001 },
-  Tranmere: { lat: 53.388, lng: -3.014 },
-  "New Ferry": { lat: 53.386, lng: -3.001 },
-  Woodside: { lat: 53.397, lng: -3.013 },
-  Seacombe: { lat: 53.425, lng: -3.057 },
-  Egerton: { lat: 53.394, lng: -3.020 },
-  Bidston: { lat: 53.414, lng: -3.053 },
-  "Bidston Hill": { lat: 53.421, lng: -3.066 },
-  Liscard: { lat: 53.426, lng: -3.041 }
+  "Nottingham City Centre": { lat: 52.9548, lng: -1.1581 },
+  "West Bridgford": { lat: 52.931, lng: -1.133 },
+  Beeston: { lat: 52.942, lng: -1.204 },
+  Arnold: { lat: 53.0, lng: -1.125 },
+  Carlton: { lat: 52.988, lng: -1.136 },
+  Mapperley: { lat: 52.965, lng: -1.128 },
+  Sherwood: { lat: 52.977, lng: -1.131 },
+  Hucknall: { lat: 53.033, lng: -1.197 },
+  Bulwell: { lat: 53.000, lng: -1.178 },
+  Gedling: { lat: 52.981, lng: -1.123 },
+  "Long Eaton": { lat: 52.892, lng: -1.250 },
+  Stapleford: { lat: 52.939, lng: -1.242 },
+  Ruddington: { lat: 52.927, lng: -1.153 }
 };
 
-/* ---------------- FlyTo helper ---------------- */
-function FlyToArea({ position }) {
+/* ---------------- Auto Fit Bounds ---------------- */
+function FitBounds() {
   const map = useMap();
 
-  if (position) {
-    map.flyTo(position, 12, { duration: 1.2 });
-  }
+  useEffect(() => {
+    const bounds = L.latLngBounds(
+      Object.values(areaCoordinates).map((area) => [
+        area.lat,
+        area.lng
+      ])
+    );
+    map.fitBounds(bounds, { padding: [50, 50] });
+  }, [map]);
 
   return null;
 }
 
 /* ---------------- MAIN COMPONENT ---------------- */
-export default function LiverpoolMapSection() {
+export default function NottinghamMapSection() {
   const [selectedArea, setSelectedArea] = useState(null);
 
   return (
-    <section className="py-16 md:py-24 bg-linear-to-b from-white to-slate-50 relative z-0">
+    <section className="py-16 md:py-24 bg-black relative">
       <div className="container mx-auto px-4">
 
         {/* Header */}
         <div className="text-center mb-12 max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#0D1525]">
-            My Service Coverage Map
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+            Nottingham Service Coverage Map
           </h2>
-          <p className="text-lg text-[#334155]">
-          I provide mobile vehicle assistance across Merseyside
-          </p>
         </div>
 
         {/* Map Card */}
-        <div className="max-w-5xl mx-auto">
-          <div className="bg-white rounded-2xl p-4 md:p-8 shadow-2xl border border-slate-200">
+        <div className="max-w-6xl mx-auto">
+          <div className="bg-white rounded-3xl p-4 md:p-8 shadow-2xl">
 
-            {/* MAP (SCROLL SAFE) */}
-            <div className="relative w-full aspect-4/3 rounded-xl overflow-hidden z-0">
+            {/* Responsive Map */}
+            <div className="relative w-full h-[350px] md:h-[500px] rounded-2xl overflow-hidden">
               <MapContainer
-                center={[53.4084, -2.9916]}   // Liverpool
-                zoom={10}
-                scrollWheelZoom={false}      // 
-                className="w-full h-full relative z-0"
+                scrollWheelZoom={true}   /* Zoom Enabled */
+                className="w-full h-full"
               >
                 <TileLayer
                   attribution="© OpenStreetMap"
                   url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
 
-                <FlyToArea
-                  position={
-                    selectedArea
-                      ? [
-                          areaCoordinates[selectedArea].lat,
-                          areaCoordinates[selectedArea].lng
-                        ]
-                      : null
-                  }
-                />
+                <FitBounds />
 
                 {Object.entries(areaCoordinates).map(([area, coords]) => (
                   <Marker
@@ -110,23 +103,22 @@ export default function LiverpoolMapSection() {
             </div>
 
             {/* Area List */}
-            <div className="mt-10 max-w-4xl mx-auto">
-              <h3 className="text-xl font-bold text-[#0D1525] mb-6 text-center">
-                All Service Areas
+            <div className="mt-10">
+              <h3 className="text-xl font-bold text-center text-[#0D1525] mb-6">
+                Areas We Cover
               </h3>
 
-              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
                 {Object.keys(areaCoordinates)
                   .sort()
                   .map((area) => (
                     <div
                       key={area}
                       onClick={() => setSelectedArea(area)}
-                      className={`cursor-pointer border rounded-lg px-3 py-2 text-center text-sm font-medium transition ${
-                        selectedArea === area
-                          ? "border-[#e80202] bg-[#e80202]/10 text-[#e80202]"
-                          : "border-slate-200 text-[#334155] hover:border-[#e80202]/50"
-                      }`}
+                      className={`cursor-pointer rounded-xl px-3 py-2 text-center font-medium transition-all duration-300 transform hover:scale-105 ${selectedArea === area
+                          ? "bg-[#e80202] text-white shadow-lg"
+                          : "bg-[#e80202] text-white hover:bg-[#e80202]/70"
+                        }`}
                     >
                       {area}
                     </div>

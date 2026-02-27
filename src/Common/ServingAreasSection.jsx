@@ -20,10 +20,16 @@ export default function ServingAreasSection({ areas, title, subtitle, footer }) 
           {areas.map((area, index) => (
             <div
               key={index}
-              className="bg-white border border-[#e80202]/20 rounded-lg p-4 hover:border-[#e80202] hover:shadow-[0_0_15px_#e8020233] transition-all duration-300 group"
+              className="bg-linear-to-br from-[#e80202] to-[#a80000] 
+              border border-white/10 
+              rounded-lg p-4 
+              shadow-[0_0_20px_rgba(232,2,2,0.25)] 
+              hover:shadow-[0_0_35px_rgba(232,2,2,0.6)] 
+              hover:scale-105
+              transition-all duration-300 group"
             >
               <div className="flex items-start gap-3">
-                <div className="mt-1 text-[#e80202] group-hover:scale-110 transition-transform">
+                <div className="mt-1 text-white group-hover:scale-110 transition-transform">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -42,7 +48,7 @@ export default function ServingAreasSection({ areas, title, subtitle, footer }) 
                 </div>
 
                 <div className="flex-1 min-w-0">
-                  <h3 className="font-semibold text-sm leading-tight text-[#0D1525]">
+                  <h3 className="font-semibold text-sm leading-tight text-white">
                     {area}
                   </h3>
                 </div>

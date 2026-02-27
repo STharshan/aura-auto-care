@@ -35,7 +35,7 @@ function Nottingham() {
         subtitle={NottinghamSubtitle}
         footer={footer}
       />
-
+      <NottinghamMapSection />
       {/* Services / Comparison Section */}
       <MicrosuctionComparison data={NottinghamServicesData} />
  

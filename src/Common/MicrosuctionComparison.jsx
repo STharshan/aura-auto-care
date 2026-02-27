@@ -1,6 +1,6 @@
 import React from "react";
 
-// Icon mapping helper
+// Service Icon (Red Stroke)
 const ServiceIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -8,7 +8,7 @@ const ServiceIcon = () => (
     height="24"
     viewBox="0 0 24 24"
     fill="none"
-    stroke="white"
+    stroke="#e80202"
     strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
@@ -36,24 +36,37 @@ export default function ServicesSection({ data }) {
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {data.services.map((service, index) => {
-            // Logic to center the last item if the list is odd
-            const isLastOdd = index === data.services.length - 1 && data.services.length % 2 !== 0;
+            const isLastOdd =
+              index === data.services.length - 1 &&
+              data.services.length % 2 !== 0;
 
             return (
               <div
                 key={index}
-                className={`bg-white rounded-2xl p-8 border border-[#E5E7EB] shadow-sm hover:shadow-[0_0_20px_#e8020233] transition-all duration-300 ${
-                  isLastOdd ? "md:col-span-2 md:max-w-2xl md:mx-auto" : ""
+                className={`bg-linear-to-br from-[#e80202] to-[#a80000]
+                rounded-2xl p-8 border border-white/10
+                shadow-[0_0_25px_rgba(232,2,2,0.35)]
+                hover:shadow-[0_0_40px_rgba(232,2,2,0.6)]
+                transition-all duration-300 transform hover:-translate-y-1
+                ${
+                  isLastOdd
+                    ? "md:col-span-2 md:max-w-2xl md:mx-auto"
+                    : ""
                 }`}
               >
+                {/* Icon + Title */}
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="w-12 h-12 rounded-full flex items-center justify-center bg-[#e80202] shrink-0">
+                  <div className="w-12 h-12 rounded-full flex items-center justify-center bg-white shrink-0 shadow-md">
                     <ServiceIcon />
                   </div>
-                  <h3 className="text-xl font-semibold text-[#0D1525]">{service.title}</h3>
+
+                  <h3 className="text-xl font-semibold text-white">
+                    {service.title}
+                  </h3>
                 </div>
 
-                <ul className="space-y-3 text-[#4B5563]">
+                {/* Description List */}
+                <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <div className="mt-1 shrink-0">
                       <svg
@@ -62,7 +75,7 @@ export default function ServicesSection({ data }) {
                         height="20"
                         viewBox="0 0 24 24"
                         fill="none"
-                        stroke="#e80202"
+                        stroke="white"
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -72,7 +85,10 @@ export default function ServicesSection({ data }) {
                         <path d="m9 12 2 2 4-4" />
                       </svg>
                     </div>
-                    <span className="text-lg leading-relaxed text-[#B0B0B0]">{service.description}</span>
+
+                    <span className="text-lg leading-relaxed text-white/80">
+                      {service.description}
+                    </span>
                   </li>
                 </ul>
               </div>

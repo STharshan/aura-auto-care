@@ -35,9 +35,10 @@ const Footer = () => {
           <div className="flex flex-col flex-1 md:items-center">
             <h4 className="text-lg font-semibold mb-6">Pages</h4>
             <ul className="space-y-4 text-gray-300 md:text-center">
-              <li><a href="/" className="hover:text-white transition">Home</a></li>
-              <li><a href="/about" className="hover:text-white transition">About Us</a></li>
-              <li><a href="/service" className="hover:text-white transition">Service</a></li>
+              <li><a href="#" className="hover:text-white transition">Home</a></li>
+              <li><a href="/#about" className="hover:text-white transition">About Us</a></li>
+              <li><Link to="/review" className="hover:text-white transition">Review</Link></li>
+              <li><a href="/#contact" className="hover:text-white transition">Contact</a></li>
             </ul>
           </div>
 

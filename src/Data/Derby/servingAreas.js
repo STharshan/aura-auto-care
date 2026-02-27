@@ -30,7 +30,7 @@ export const DerbyAreas = [
   "Oakwood",
   "Borrowash",
   "Breadsall",
-  "And surrounding areas",
+  "surrounding areas",
 ];
 
 // Titles for sections

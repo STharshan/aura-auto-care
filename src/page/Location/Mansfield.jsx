@@ -35,7 +35,7 @@ function Mansfield() {
         subtitle={MansfieldSubtitle}
         footer={footer}
       />
-
+      <MansfieldMapSection />
       {/* Services / Comparison Section */}
       <MicrosuctionComparison data={MansfieldServicesData} />
 

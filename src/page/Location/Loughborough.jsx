@@ -21,6 +21,7 @@ import {
   LoughboroughCTAData
 } from "../../Data/Loghborough/servingAreas";
 import { LeicesterAppointmentData } from "../../Data/Leicester/servingAreas";
+import LoghboroughMapSection from "../../Data/Loghborough/LoghboroughMapSection";
 
 function Loughborough() {
   return (
@@ -35,6 +36,7 @@ function Loughborough() {
         subtitle={LoughboroughSubtitle}
         footer={footer}
       />
+      <LoghboroughMapSection />
 
       {/* Services / Comparison Section */}
       <MicrosuctionComparison data={LoughboroughServicesData} />

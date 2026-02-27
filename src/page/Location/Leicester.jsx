@@ -35,7 +35,7 @@ function Leicester() {
         subtitle={LeicesterSubtitle}
         footer={footer}
       />
-
+      <LeicesterMapSection />
       {/* Services / Comparison Section */}
       <MicrosuctionComparison data={LeicesterServicesData} />
 

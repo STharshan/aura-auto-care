@@ -7,20 +7,11 @@ import "aos/dist/aos.css";
 
 // Icons
 import {
-  FileCheck2,
-  Disc,
-  Clock,
-  Battery,
-  ActivitySquare,
-  Settings,
-  Cable,
-  Cpu,
-  Snowflake,
   Car,
-  ShieldCheck,
-  Sparkles,
-  RefreshCw,
-  CalendarCheck,
+  Shield,
+  Brush,
+  Wrench,
+  ClipboardCheck,
 } from "lucide-react";
 
 export default function AutomotiveServicesSection() {
@@ -104,7 +95,7 @@ const cards = [
   {
     path: "/services/valeting",
     iconBg: "from-red-500 to-orange-600",
-    icon: <FileCheck2 size={28} />,
+    icon: <Car size={28} />,
     tag: "Detailing",
     title: "Valeting",
     subtitle: "Interior & Exterior Care",
@@ -113,7 +104,7 @@ const cards = [
   {
     path: "/services/ceramic-coating",
     iconBg: "from-blue-500 to-cyan-600",
-    icon: <ShieldCheck size={28} />,
+    icon: <Shield size={28} />,
     tag: "Protection",
     title: "Ceramic Coating",
     subtitle: "Long-Lasting Paint Protection",
@@ -122,7 +113,7 @@ const cards = [
   {
     path: "/services/paint-correction",
     iconBg: "from-purple-500 to-pink-600",
-    icon: <Sparkles size={28} />,
+    icon: <Brush size={28} />,
     tag: "Restoration",
     title: "Paint Correction",
     subtitle: "Flawless Paint Finish",
@@ -131,7 +122,7 @@ const cards = [
   {
     path: "/services/deep-restoration",
     iconBg: "from-green-500 to-emerald-600",
-    icon: <RefreshCw size={28} />,
+    icon: <Wrench size={28} />,
     tag: "Revival",
     title: "Deep Restoration",
     subtitle: "Complete Vehicle Revival",
@@ -140,7 +131,7 @@ const cards = [
   {
     path: "/services/maintenance-plan",
     iconBg: "from-yellow-500 to-amber-600",
-    icon: <CalendarCheck size={28} />,
+    icon: <ClipboardCheck size={28} />,
     tag: "Care Plan",
     title: "Maintenance Plan",
     subtitle: "Ongoing Vehicle Care",

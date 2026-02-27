@@ -2,8 +2,6 @@ import { Instagram, ArrowDown } from "lucide-react";
 import { BsTiktok } from "react-icons/bs";
 
 export default function HeroSection({
-  tagline = "Full Service and Excellent Quality",
-  title = "RESTORE YOUR AURA",
 }) {
 
   return (
@@ -71,15 +69,15 @@ export default function HeroSection({
 
         {/* Main Content */}
         <div className="absolute bottom-[15%] left-6 sm:left-8 md:left-16 z-20">
-          <p className="text-white text-[10px] sm:text-[11px] md:text-sm tracking-[0.2em] font-semibold mb-3 sm:mb-4 md:mb-6">
-            {tagline}
+          <p className="text-[#e80202] text-[10px] sm:text-[11px] md:text-sm tracking-[0.2em] font-semibold mb-3 sm:mb-4 md:mb-6">
+           Full Service and Excellent Quality
           </p>
 
           <h1
             className="text-primary font-bold leading-[0.85]"
             style={{ fontSize: "clamp(2.8rem, 10vw, 7rem)" }}
           >
-            {title}
+            RESTORE YOUR <span className="text-[#e80202]">AURA</span>
           </h1>
         </div>
 

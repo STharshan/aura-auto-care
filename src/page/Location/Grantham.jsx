@@ -36,6 +36,8 @@ function Grantham() {
         footer={footer}
       />
 
+      <GranthamMapSection />
+
       {/* Services / Comparison Section */}
       <MicrosuctionComparison data={GranthamServicesData} />
 

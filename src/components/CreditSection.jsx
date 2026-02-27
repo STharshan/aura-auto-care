@@ -27,7 +27,7 @@ const AboutSection = () => {
                        z-0 rounded-sm overflow-hidden"
           >
             <img
-              src="image.png"
+              src="a1.jpeg"
               alt="Workshop background"
               className="w-full h-full object-cover opacity-80 transition-opacity duration-500"
             />
@@ -35,7 +35,7 @@ const AboutSection = () => {
 
           {/* Foreground image */}
           <img
-            src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=400&h=500&fit=crop"
+            src="/a2.png"
             alt="Mechanic"
             className="relative z-10 rounded-sm shadow-lg w-[260px] sm:w-[280px] md:w-[320px] 
                        h-[340px] sm:h-[380px] md:h-[420px] object-cover mt-10 ml-10 sm:mt-12 md:mt-16"
@@ -77,7 +77,7 @@ const AboutSection = () => {
               <img
                 src="logo-white.png"
                 alt="AURA Autocare"
-                className="w-18 h-10  object-cover shrink-0"
+                className="w-12 h-12  object-cover shrink-0"
               />
               <div>
                 <h4 className="text-gray-100 font-semibold text-sm sm:text-base">

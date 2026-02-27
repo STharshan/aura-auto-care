@@ -4,7 +4,7 @@ import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false); // Mobile Menu State
+  const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [showServicesDropdown, setShowServicesDropdown] = useState(false);
   const [showLocationDropdown, setShowLocationDropdown] = useState(false);
@@ -14,14 +14,12 @@ export default function Navbar() {
   const servicesDropdownRef = useRef(null);
   const locationDropdownRef = useRef(null);
 
-  // Scroll effect
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close desktop dropdowns when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -41,7 +39,6 @@ export default function Navbar() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // Close mobile menu and reset dropdowns
   const handleMobileMenuClick = () => {
     setIsOpen(false);
     setMobileServicesOpen(false);
@@ -67,7 +64,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
+      className={`fixed top-0 left-0 w-full z-9999 transition-all duration-500 ${
         scrolled ? "bg-black shadow-md" : "bg-transparent"
       }`}
     >
@@ -76,8 +73,8 @@ export default function Navbar() {
         <div className="flex items-center">
           <img
             src="/logo-white.png"
-            alt="TT Automotive Logo"
-            className="h-14 w-auto object-contain"
+            alt="aura Logo"
+            className="h-18 w-auto object-contain"
           />
         </div>
 
@@ -156,15 +153,16 @@ export default function Navbar() {
           <HashLink to="/review" className="hover:text-[#e80202] transition">
             Review
           </HashLink>
-          {/* <HashLink to="/#contact" className="hover:text-[#e80202] transition">
+          {/* Contact Us added here */}
+          <HashLink to="/#contact" className="hover:text-[#e80202] transition">
             Contact Us
-          </HashLink> */}
+          </HashLink>
         </nav>
 
         {/* Desktop CTA */}
         <div className="hidden xl:flex items-center">
           <HashLink to="/#contact">
-            <button className="px-7 py-2.5 bg-linear-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900 text-white font-medium text-base rounded-lg border-2 border-white/15 shadow-[0_6px_25px_rgba(255,0,0,0.4)] transition-all duration-300">
+            <button className="px-7 py-2.5 bg-linear-to-br from-[#e80202] to-[#a80000] cursor-pointer hover:bg-[#e73030] text-white font-medium text-base rounded-lg border-2 border-white/15 shadow-[0_6px_25px_rgba(255,0,0,0.4)] transition-all duration-300">
               Get In Touch
             </button>
           </HashLink>
@@ -253,13 +251,14 @@ export default function Navbar() {
           <HashLink to="/review" className="block text-lg font-medium" onClick={handleMobileMenuClick}>
             Review
           </HashLink>
-          {/* <HashLink to="/#contact" className="block text-lg font-medium" onClick={handleMobileMenuClick}>
+          {/* Contact Us added here */}
+          <HashLink to="/#contact" className="block text-lg font-medium" onClick={handleMobileMenuClick}>
             Contact Us
-          </HashLink> */}
+          </HashLink>
 
           <div className="pt-4">
             <HashLink to="/#contact" onClick={handleMobileMenuClick}>
-              <button className="w-full px-7 py-3 bg-linear-to-r from-red-600 to-red-800 text-white font-bold rounded-lg">
+              <button className="w-full px-7 py-3 bg-linear-to-br from-[#e80202] to-[#a80000] text-white font-bold rounded-lg">
                 Get a Quote
               </button>
             </HashLink>
