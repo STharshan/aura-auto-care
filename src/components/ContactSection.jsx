@@ -28,7 +28,7 @@ export default function ContactSection() {
   const [status, setStatus] = useState({ state: "idle", message: "" });
 
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    // AOS.init({ duration: 1000 });
   }, []);
 
   const validateField = (name, value) => {
