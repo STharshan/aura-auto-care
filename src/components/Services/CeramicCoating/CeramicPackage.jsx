@@ -79,7 +79,7 @@ export default function CeramicPackage() {
     const { contactLinks, packages, detail } = contentData;
 
     return (
-        <section id="package" className="scroll-m-10 bg-gradient-to-b from-black via-[#0b0b0b] to-[#1a1a1a] text-white py-16 px-4 sm:px-6 lg:px-12">
+        <section id="package" className="scroll-m-10 bg-linear-to-b from-black via-[#0b0b0b] to-[#1a1a1a] text-white py-16 px-4 sm:px-6 lg:px-12">
             <div className="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-[0.9fr_1.1fr] gap-12">
 
                 {/* LEFT COLUMN - STICKY HEADER & CONTACT */}
@@ -131,7 +131,7 @@ export default function CeramicPackage() {
                     {packages.map((pkg, idx) => (
                         <div
                             key={idx}
-                            className="border border-white/10 rounded-2xl bg-gradient-to-br from-[#151515] to-[#0b0b0b] backdrop-blur-lg p-6 sm:p-8 hover:border-[#861918]/40 hover:shadow-[0_0_25px_rgba(134,25,24,0.15)] transition-all duration-500"
+                            className="border border-white/10 rounded-2xl bg-linear-to-br from-[#151515] to-[#0b0b0b] backdrop-blur-lg p-6 sm:p-8 hover:border-[#861918]/40 hover:shadow-[0_0_25px_rgba(134,25,24,0.15)] transition-all duration-500"
                         >
                             <div className="flex flex-wrap items-center gap-3 mb-6">
                                 <h6 className="text-sm font-semibold text-gray-400 uppercase tracking-widest">{pkg.type}</h6>
