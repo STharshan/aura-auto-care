@@ -6,8 +6,24 @@ import "aos/dist/aos.css";
 
 const AboutSection = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true, easing: "ease-in-out" });
+    // Disable AOS animations on mobile (screens smaller than 1024px)
+    const isMobile = window.innerWidth < 1024;
+
+    if (!isMobile) {
+      AOS.init({ duration: 1000, once: true, easing: "ease-in-out" });
+    }
   }, []);
+
+  // Helper: return AOS props only on desktop
+  const aosProps = (aosType, delay) => {
+    if (typeof window !== "undefined" && window.innerWidth >= 1024) {
+      return {
+        "data-aos": aosType,
+        ...(delay ? { "data-aos-delay": String(delay) } : {}),
+      };
+    }
+    return {};
+  };
 
   return (
     <section
@@ -18,7 +34,7 @@ const AboutSection = () => {
         {/* LEFT IMAGES */}
         <div
           className="relative flex justify-center lg:justify-end order-2 lg:order-1"
-          data-aos="fade-right"
+          {...aosProps("fade-right")}
         >
           {/* Background image */}
           <div
@@ -43,7 +59,7 @@ const AboutSection = () => {
         </div>
 
         {/* RIGHT CONTENT */}
-        <div className="order-1 lg:order-2" data-aos="fade-left" data-aos-delay="200">
+        <div className="order-1 lg:order-2" {...aosProps("fade-left", 200)}>
           {/* Subtitle */}
           <div className="flex items-center gap-2 mb-3">
             <FaToolbox className="text-[#e80202]  text-lg sm:text-xl" />
@@ -63,7 +79,7 @@ const AboutSection = () => {
               Professional Mobile Detailing & Valeting
             </span>
             AURA Autocare was founded by Adam with a simple goal — to provide high-quality car detailing and valeting services directly to customers through a fully mobile setup. Built around convenience, attention to detail, and professional care, AURA Autocare delivers showroom-level results wherever your vehicle is located.
-            <p className="mt-3">From thorough interior valets to meticulous exterior detailing, every service is carried out using premium products and proven techniques designed to restore, protect, and maintain your vehicle’s appearance.</p>
+            <p className="mt-3">From thorough interior valets to meticulous exterior detailing, every service is carried out using premium products and proven techniques designed to restore, protect, and maintain your vehicle's appearance.</p>
           </p>
 
           {/* Profile + Bullet Points */}
@@ -71,8 +87,7 @@ const AboutSection = () => {
             {/* Profile Box */}
             <div
               className="bg-gray-800 p-4 rounded-lg flex items-center gap-3 sm:gap-4 shadow-sm w-80 transition-colors duration-500"
-              data-aos="fade-up"
-              data-aos-delay="300"
+              {...aosProps("fade-up", 300)}
             >
               <img
                 src="logo-white.png"
@@ -93,16 +108,14 @@ const AboutSection = () => {
             <ul className="space-y-3 sm:space-y-4 text-gray-300">
               <li
                 className="flex items-start gap-2 sm:gap-3"
-                data-aos="fade-up"
-                data-aos-delay="400"
+                {...aosProps("fade-up", 400)}
               >
                 <IoMdCheckmarkCircleOutline className="text-[#e80202] shrink-0 mt-1 text-lg" />
                 <span className="text-sm sm:text-base">Trusted detailing & valeting</span>
               </li>
               <li
                 className="flex items-start gap-2 sm:gap-3"
-                data-aos="fade-up"
-                data-aos-delay="500"
+                {...aosProps("fade-up", 500)}
               >
                 <IoMdCheckmarkCircleOutline className="text-[#e80202] shrink-0 mt-1 text-lg" />
                 <span className="text-sm sm:text-base">
@@ -111,8 +124,7 @@ const AboutSection = () => {
               </li>
               <li
                 className="flex items-start gap-2 sm:gap-3"
-                data-aos="fade-up"
-                data-aos-delay="600"
+                {...aosProps("fade-up", 600)}
               >
                 <IoMdCheckmarkCircleOutline className="text-[#e80202] shrink-0 mt-1 text-lg" />
                 <span className="text-sm sm:text-base">
