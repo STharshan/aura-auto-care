@@ -16,10 +16,10 @@ import Grantham from "./page/Location/Grantham";
 import Loughborough from "./page/Location/Loughborough";
 
 import CeramicCoating from "./page/Services/CeramicCoating";
-import Valeting from "./page/Services/valeting";
 import PaintCorrection from "./page/Services/PaintCorrection";
 import DeepRestoration from "./page/Services/DeepRestoration";
 import MaintenancePlan from "./page/Services/MaintenancePlan";
+import Valeting from "./page/Services/Valeting";
 
 
 
