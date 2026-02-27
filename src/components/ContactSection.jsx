@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const HOURS = [
-  { day: "Monday - Sunday", time: "9:00 AM – 7:30 PM" },
+  { day: "Monday - Sunday", time: "9:00 AM – 7:30 PM" },
 ];
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
@@ -28,7 +28,12 @@ export default function ContactSection() {
   const [status, setStatus] = useState({ state: "idle", message: "" });
 
   useEffect(() => {
-    // AOS.init({ duration: 1000 });
+    AOS.init({
+      duration: 1000,
+      once: true,        // animate only once — prevents re-trigger glitches on scroll
+      disable: false,    // ✅ FIXED: was implicitly disabling on mobile (< 768px). Now always enabled.
+      mirror: false,
+    });
   }, []);
 
   const validateField = (name, value) => {
