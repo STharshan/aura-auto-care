@@ -1,18 +1,10 @@
-
-
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-// Icons
-import {
-  Car,
-  Shield,
-  Brush,
-  Wrench,
-  ClipboardCheck,
-} from "lucide-react";
+// Logos will replace icons
+// Ensure your images are in /public/logos/ folder or adjust the path
 
 export default function AutomotiveServicesSection() {
   useEffect(() => {
@@ -90,12 +82,11 @@ export default function AutomotiveServicesSection() {
   );
 }
 
-/* === Card Data === */
+/* === Card Data with Logos === */
 const cards = [
   {
     path: "/services/valeting",
-    iconBg: "from-red-500 to-orange-600",
-    icon: <Car size={28} />,
+    logoSrc: "/logos/valeting-logo.png",
     tag: "Detailing",
     title: "Valeting",
     subtitle: "Interior & Exterior Care",
@@ -103,8 +94,7 @@ const cards = [
   },
   {
     path: "/services/ceramic-coating",
-    iconBg: "from-blue-500 to-cyan-600",
-    icon: <Shield size={28} />,
+    logoSrc: "/logos/ceramic-logo.png",
     tag: "Protection",
     title: "Ceramic Coating",
     subtitle: "Long-Lasting Paint Protection",
@@ -112,8 +102,7 @@ const cards = [
   },
   {
     path: "/services/paint-correction",
-    iconBg: "from-purple-500 to-pink-600",
-    icon: <Brush size={28} />,
+    logoSrc: "/logos/paint-correction-logo.png",
     tag: "Restoration",
     title: "Paint Correction",
     subtitle: "Flawless Paint Finish",
@@ -121,8 +110,7 @@ const cards = [
   },
   {
     path: "/services/deep-restoration",
-    iconBg: "from-green-500 to-emerald-600",
-    icon: <Wrench size={28} />,
+    logoSrc: "/logos/deep-restoration-logo.png",
     tag: "Revival",
     title: "Deep Restoration",
     subtitle: "Complete Vehicle Revival",
@@ -130,8 +118,7 @@ const cards = [
   },
   {
     path: "/services/maintenance-plan",
-    iconBg: "from-yellow-500 to-amber-600",
-    icon: <ClipboardCheck size={28} />,
+    logoSrc: "/logos/maintenance-plan-logo.png",
     tag: "Care Plan",
     title: "Maintenance Plan",
     subtitle: "Ongoing Vehicle Care",
@@ -139,8 +126,8 @@ const cards = [
   },
 ];
 
-/* === Card Component === */
-function ServiceCard({ path, iconBg, icon, tag, title, subtitle, body }) {
+/* === Card Component with Responsive Logos === */
+function ServiceCard({ path, logoSrc, tag, title, subtitle, body }) {
   return (
     <Link
       to={path}
@@ -152,14 +139,14 @@ function ServiceCard({ path, iconBg, icon, tag, title, subtitle, body }) {
       {/* Top Line */}
       <div className="absolute -top-px left-0 right-0 h-0.5 bg-linear-to-r from-transparent via-red-500 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-300" />
 
-      {/* Icon + Tag */}
+      {/* Logo + Tag */}
       <div className="flex items-center justify-between mb-6">
-        <div className="w-16 h-16 rounded-full bg-linear-to-br from-[#1f1f1f] to-[#0d0d0d] flex items-center justify-center">
-          <div
-            className={`w-12 h-12 rounded-full flex items-center justify-center text-2xl bg-linear-to-br ${iconBg}`}
-          >
-            {icon}
-          </div>
+        <div className="w-16 h-16 flex items-center justify-center">
+          <img
+            src="logo-white.png"
+            alt={`${title} Logo`}
+            className="max-w-full max-h-full object-contain"
+          />
         </div>
 
         <span className="text-[11px] font-semibold px-3 py-1 rounded-md bg-linear-to-r from-red-600 to-red-800 border border-white/20 shadow-[0_0_10px_rgba(255,0,0,0.5)]">
