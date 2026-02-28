@@ -57,7 +57,7 @@ export default function HeroSection({
 
               {/* Call Button */}
               <a
-                href={`tel:${callNumber}`}
+                href="tel:+447305794353"
                 className="inline-flex items-center justify-center gap-2 bg-white hover:bg-white/50 text-black font-medium rounded-md h-12 px-8 transition-all shadow-md"
               >
                 Call Now
