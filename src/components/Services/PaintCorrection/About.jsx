@@ -5,7 +5,7 @@ export default function AboutSection() {
       <div className="w-full max-w-5xl rounded-2xl border border-gray-700 overflow-hidden mb-10">
         <div className="bg-[#1a1a1a] flex items-center justify-center p-8 md:p-12">
           <img
-            src="/spray-can-analysis.png"
+            src="/logo-white.png"
             alt="Aura Auto Care"
             className="w-64 sm:w-72 md:w-80 lg:w-96 object-contain"
           />

@@ -26,7 +26,7 @@ const contentData = {
             btnText: "Book Sealant",
             bgColor: "bg-red-900/10",
             borderColor: "border-red-900/20",
-            iconColor: "text-[#861918]",
+            iconColor: "text-[#e80202] ",
             features: [
                 { icon: <Droplets size={18} />, title: "3-4 Months Protection:", description: "Applied as a snow foam or panel by panel for quick application with no dwell time." },
                 { icon: <Shield size={18} />, title: "Road Grime Defense:", description: "Amazing protection to fight off moderate levels of road grime." },
@@ -39,7 +39,7 @@ const contentData = {
             btnText: "Book 3 Year Coating",
             bgColor: "bg-red-900/10",
             borderColor: "border-red-900/20",
-            iconColor: "text-[#861918]",
+            iconColor: "text-[#e80202] ",
             features: [
                 { icon: <ShieldCheck size={18} />, title: "7H Hardness:", description: "A scratch resistant layer to keep your paintwork swirl free." },
                 { icon: <Zap size={18} />, title: "Long Term:", description: "Protects your paintwork for up to 3 years from harsh environmental chemicals." },
@@ -52,7 +52,7 @@ const contentData = {
             btnText: "Book Nero Coating",
             bgColor: "bg-red-900/10",
             borderColor: "border-red-900/20",
-            iconColor: "text-[#861918]",
+            iconColor: "text-[#e80202] ",
             features: [
                 { icon: <Sparkles size={18} />, title: "5 Year Protection:", description: "Provides up to 5 years of protection from Chemical and UV damage." },
                 { icon: <Zap size={18} />, title: "Self Healing:", description: "Advanced capabilities with swirl resistance and self-healing properties." },
@@ -65,7 +65,7 @@ const contentData = {
             btnText: "Book Platinum Package",
             bgColor: "bg-red-900/10",
             borderColor: "border-red-900/20",
-            iconColor: "text-[#861918]",
+            iconColor: "text-[#e80202] ",
             features: [
                 { icon: <ShieldCheck size={18} />, title: "Full Exterior:", description: "Complete protection for Paintwork, Wheels, Glass, and Trims." },
                 { icon: <Zap size={18} />, title: "3 Year Duration:", description: "Everything protected for up to 3 years for total peace of mind." },
@@ -82,12 +82,14 @@ export default function CeramicPackage() {
         <section id="package" className="scroll-m-10 bg-linear-to-b from-black via-[#0b0b0b] to-[#1a1a1a] text-white py-16 px-4 sm:px-6 lg:px-12">
             <div className="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-[0.9fr_1.1fr] gap-12">
 
-                {/* LEFT COLUMN - STICKY HEADER & CONTACT */}
-                <div className="space-y-8 lg:sticky lg:top-24 lg:h-fit self-start">
-                    <div>
+                {/* LEFT COLUMN - on desktop: sticky with title + contacts. On mobile: split into two parts (title first, contacts last) */}
+                <div className="lg:sticky lg:top-24 lg:h-fit self-start lg:space-y-8">
+
+                    {/* TITLE BLOCK — order-1 on mobile (shows first), normal flow on desktop */}
+                    <div className="order-first">
                         <div className="flex items-center gap-3 mb-4">
-                            <div className="h-0.5 w-12 bg-[#861918]"></div>
-                            <h6 className="text-xs sm:text-sm font-semibold text-[#861918] uppercase tracking-wider">
+                            <div className="h-0.5 w-12 bg-[#e80202] "></div>
+                            <h6 className="text-xs sm:text-sm font-semibold text-[#e80202]  uppercase tracking-wider">
                                 {detail.tittle}
                             </h6>
                         </div>
@@ -96,8 +98,8 @@ export default function CeramicPackage() {
                         </h2>
                     </div>
 
-                    {/* Contact Links */}
-                    <div className="space-y-3">
+                    {/* CONTACT LINKS — hidden on mobile (rendered separately below packages) */}
+                    <div className="hidden lg:block space-y-3 mt-8">
                         {contactLinks.map((link, index) => (
                             <a
                                 key={index}
@@ -106,39 +108,32 @@ export default function CeramicPackage() {
                                 rel="noopener noreferrer"
                                 className="group flex items-center gap-4 border border-white/10 rounded-xl p-4 bg-[#111]/70 hover:bg-white/10 transition-all duration-300"
                             >
-                                <div className="flex items-center justify-center h-10 w-10 text-[#861918]">
+                                <div className="flex items-center justify-center h-10 w-10 text-[#e80202] ">
                                     {iconMap[link.icon]}
                                 </div>
                                 <div>
-                                    <h6 className="text-base font-semibold group-hover:text-[#861918] transition-colors">
+                                    <h6 className="text-base font-semibold group-hover:text-[#e80202]  transition-colors">
                                         {link.title}
                                     </h6>
                                 </div>
                             </a>
                         ))}
                     </div>
-
-                    <div className="hidden lg:flex items-center gap-2 text-gray-500 text-sm">
-                        <svg className="h-4 w-4 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                        </svg>
-                        <span>Scroll down to see protection options</span>
-                    </div>
                 </div>
 
-                {/* RIGHT COLUMN - SCROLLABLE PACKAGES */}
+                {/* RIGHT COLUMN - PACKAGES */}
                 <div className="flex flex-col gap-10 mt-10 lg:mt-0">
                     {packages.map((pkg, idx) => (
                         <div
                             key={idx}
-                            className="border border-white/10 rounded-2xl bg-linear-to-br from-[#151515] to-[#0b0b0b] backdrop-blur-lg p-6 sm:p-8 hover:border-[#861918]/40 hover:shadow-[0_0_25px_rgba(134,25,24,0.15)] transition-all duration-500"
+                            className="border border-white/10 rounded-2xl bg-linear-to-br from-[#151515] to-[#0b0b0b] backdrop-blur-lg p-6 sm:p-8 hover:border-[#e80202] /40 hover:shadow-[0_0_25px_rgba(134,25,24,0.15)] transition-all duration-500"
                         >
                             <div className="flex flex-wrap items-center gap-3 mb-6">
                                 <h6 className="text-sm font-semibold text-gray-400 uppercase tracking-widest">{pkg.type}</h6>
                             </div>
 
                             <div className="border border-white/10 rounded-lg p-5 mb-6 flex flex-wrap items-center justify-between bg-[#111]">
-                                <h3 className="text-4xl sm:text-5xl font-bold text-[#861918]">{pkg.price}</h3>
+                                <h3 className="text-4xl sm:text-5xl font-bold text-[#e80202] ">{pkg.price}</h3>
                             </div>
 
                             <div className="space-y-3 mb-6">
@@ -160,13 +155,36 @@ export default function CeramicPackage() {
                             <HashLink
                                 to="/#contact"
                                 smooth
-                                className="w-full block bg-[#861918] hover:bg-[#a51f1e] text-white font-semibold py-3 rounded-full transition-all duration-300 border-2 border-[#861918] hover:border-[#a51f1e] shadow-lg shadow-[#861918]/20 hover:shadow-[#861918]/40 text-sm sm:text-base text-center uppercase tracking-wider"
+                                className="w-full block bg-[#e80202]  hover:bg-[#a51f1e] text-white font-semibold py-3 rounded-full transition-all duration-300 border-2 border-[#e80202]  hover:border-[#a51f1e] shadow-lg shadow-[#e80202] /20 hover:shadow-[#e80202] /40 text-sm sm:text-base text-center uppercase tracking-wider"
                             >
                                 {pkg.btnText}
                             </HashLink>
                         </div>
                     ))}
                 </div>
+
+                {/* CONTACT LINKS — mobile only, shown after packages */}
+                <div className="lg:hidden space-y-3">
+                    {contactLinks.map((link, index) => (
+                        <a
+                            key={index}
+                            href={link.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group flex items-center gap-4 border border-white/10 rounded-xl p-4 bg-[#111]/70 hover:bg-white/10 transition-all duration-300"
+                        >
+                            <div className="flex items-center justify-center h-10 w-10 text-[#e80202] ">
+                                {iconMap[link.icon]}
+                            </div>
+                            <div>
+                                <h6 className="text-base font-semibold group-hover:text-[#e80202]  transition-colors">
+                                    {link.title}
+                                </h6>
+                            </div>
+                        </a>
+                    ))}
+                </div>
+
             </div>
         </section>
     );

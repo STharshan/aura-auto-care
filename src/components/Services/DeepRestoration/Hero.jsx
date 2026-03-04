@@ -42,7 +42,7 @@ export default function HeroSection() {
       <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-10 relative z-10">
         {/* ===== Left Section ===== */}
         <div className="flex flex-col justify-center space-y-6">
-          <h1 className="text-5xl sm:text-6xl font-bold leading-tight">
+          <h1 className="text-4xl sm:text-6xl font-bold leading-tight">
             <span className="block bg-linear-to-r from-red-500 via-white to-gray-400 bg-clip-text text-transparent">
               Deep Restoration
             </span>

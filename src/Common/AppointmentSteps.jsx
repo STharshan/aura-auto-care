@@ -17,10 +17,10 @@ const StepIcon = ({ type }) => {
   if (!IconComponent) return null;
 
   return (
-    <IconComponent 
-      size={40} 
-      strokeWidth={2} 
-      className="text-white" 
+    <IconComponent
+      size={40}
+      strokeWidth={2}
+      className="text-white"
     />
   );
 };
@@ -72,11 +72,13 @@ export default function AppointmentSteps({ data }) {
         {/* Bottom Info Box */}
         <div className="mt-16 p-6 md:p-8 max-w-2xl mx-auto rounded-2xl bg-[#e80202]/10 border border-[#e80202]/30 text-center">
           <p className="text-base md:text-lg text-white leading-relaxed">
-            {data.footerText.split("20–40 minutes")[0]}
-            <span className="font-semibold text-[#e80202]">
-              20–40 minutes
+            <span className="font-semibold ">
+              Valeting services range from 2-5 hrs<br />
+
+              Paint correction services range from 8-12 hrs<br />
+
+              Ceramic coating services range from 1-3 days
             </span>
-            {data.footerText.split("20–40 minutes")[1]}
           </p>
         </div>
       </div>
