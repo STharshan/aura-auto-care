@@ -1,8 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const cards = [
   {
@@ -85,15 +83,6 @@ function ServiceCard({ path, logoSrc, tag, title, subtitle, body }) {
 
 export default function AutomotiveServicesSection() {
   const scrollRef = useRef(null);
-
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: false,
-      offset: 100,
-      easing: "ease-in-out",
-    });
-  }, []);
 
   const scroll = (direction) => {
     const container = scrollRef.current;

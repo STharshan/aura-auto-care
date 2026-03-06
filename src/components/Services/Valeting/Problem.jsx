@@ -1,6 +1,3 @@
-
-
-
 export default function ProblemSection() {
   return (
     <section className="w-full bg-black text-white flex flex-col items-center justify-center py-16 px-4 md:px-8">
@@ -37,7 +34,7 @@ export default function ProblemSection() {
           <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
             Brakes{" "}
             <span className="bg-blue-600 text-xs text-white font-medium px-2 py-0.5 rounded-md">
-              TT Auto
+             Aura AutoCare
             </span>
           </h3>
 

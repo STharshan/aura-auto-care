@@ -1,6 +1,3 @@
-
-
-
 export default function SolutionSection() {
   return (
     <section className="w-full bg-black text-white flex flex-col items-center justify-center py-16 px-4 md:px-8">
@@ -29,7 +26,7 @@ export default function SolutionSection() {
           <p className="text-gray-300 leading-relaxed">
            Keep your vehicle safe and road-legal with our comprehensive MOT testing in Leicester. Our certified technicians carry out every inspection following DVSA standards, checking brakes, lights, emissions, tyres, and suspension to ensure your car meets all legal requirements. We provide honest, transparent assessments with clear explanations, so you always know what’s needed to pass.
 
-Whether you drive a family car, van, or fleet vehicle, we make the MOT process smooth and stress-free. With our quick turnaround times and free re-test options on repairs, we help keep you on the road safely and affordably. Book your Leicester MOT test with us today for peace of mind and professional care.
+            Whether you drive a family car, van, or fleet vehicle, we make the MOT process smooth and stress-free. With our quick turnaround times and free re-test options on repairs, we help keep you on the road safely and affordably. Book your Leicester MOT test with us today for peace of mind and professional care.
           </p>
         </div>
       </div>

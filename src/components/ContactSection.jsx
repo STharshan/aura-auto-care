@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const HOURS = [
   { day: "Monday - Sunday", time: "9:00 AM – 7:30 PM" },
@@ -39,11 +37,7 @@ export default function ContactSection() {
   const [status, setStatus] = useState({ state: "idle", message: "" });
 
   useEffect(() => {
-    // Disable AOS animations on mobile (screens smaller than 1024px)
     const isMobile = window.innerWidth < 1024;
-    if (!isMobile) {
-      AOS.init({ duration: 1000 });
-    }
   }, []);
 
   const validateField = (name, value) => {

@@ -1,7 +1,7 @@
 import React from "react";
 import { HashLink } from "react-router-hash-link";
 import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
-import { Sparkles, Shield, Droplets, Zap } from "lucide-react";
+import { Shield, Droplets, Zap } from "lucide-react";
 
 const iconMap = {
     Phone: <FiPhone size={20} />,
@@ -26,7 +26,7 @@ const contentData = {
             btnText: "Book",
             bgColor: "bg-red-900/10",
             borderColor: "border-red-900/20",
-            iconColor: "text-[#B62025] dark:text-[#FF4B4B]",
+            iconColor: "text-[#B62025]",
             features: [
                 { icon: <Zap size={18} />, title: "M/F Valet:", description: "Bi-weekly upkeep." },
                 { icon: <Droplets size={18} />, title: "Ceramic:", description: "£25 first, then FREE." },
@@ -39,7 +39,7 @@ const contentData = {
             btnText: "Book",
             bgColor: "bg-red-900/10",
             borderColor: "border-red-900/20",
-            iconColor: "text-[#B62025] dark:text-[#FF4B4B]",
+            iconColor: "text-[#B62025]",
             features: [
                 { icon: <Zap size={18} />, title: "M/F Valet:", description: "Monthly upkeep." },
                 { icon: <Droplets size={18} />, title: "Ceramic:", description: "£25 first, then FREE." },
@@ -52,7 +52,7 @@ const contentData = {
             btnText: "Book",
             bgColor: "bg-red-900/10",
             borderColor: "border-red-900/20",
-            iconColor: "text-[#B62025] dark:text-[#FF4B4B]",
+            iconColor: "text-[#B62025]",
             features: [
                 { icon: <Zap size={18} />, title: "Full Valet:", description: "6-week cycle." },
                 { icon: <Droplets size={18} />, title: "Ceramic:", description: "£25 first, then FREE." },
@@ -104,8 +104,7 @@ export default function PlanPackage() {
                                     </h6>
                                 </div>
                             </a>
-                        ))}
-        
+                        ))}       
                     </div>
                 </div>
 
@@ -172,7 +171,6 @@ export default function PlanPackage() {
                         </a>
                     ))}
                 </div>
-
             </div>
         </section>
     );

@@ -26,7 +26,7 @@ const contentData = {
             btnText: "Book Deep Clean",
             bgColor: "bg-red-900/10",
             borderColor: "border-red-900/20",
-            iconColor: "text-[#B62025] dark:text-[#FF4B4B]",
+            iconColor: "text-[#B62025]",
             features: [
                 { icon: <Sparkles size={18} />, title: "Exterior:", description: "Multi-stage wash, clay treatment, and machine polish." },
                 { icon: <Droplets size={18} />, title: "Interior:", description: "Steam clean, upholstery extraction, and leather nourishment." },

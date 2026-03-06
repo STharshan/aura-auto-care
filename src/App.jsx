@@ -21,9 +21,20 @@ import DeepRestoration from "./page/Services/DeepRestoration";
 import MaintenancePlan from "./page/Services/MaintenancePlan";
 import Valeting from "./page/Services/Valeting";
 
+import AOS from "aos"; // 2. Import AOS
+import "aos/dist/aos.css"; // 3. Import AOS CSS
+import { useEffect } from "react";
 
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      once: true,     // Whether animation should happen only once - while scrolling down
+      easing: "ease-in-out",
+    });
+  }, []);
+
   return (
     <Router>
       <ScrollToTop />

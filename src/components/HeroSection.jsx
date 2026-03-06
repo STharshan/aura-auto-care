@@ -74,7 +74,7 @@ export default function HeroSection({
           </p>
 
           <h1
-            className="text-primary font-bold leading-[0.85]"
+            className="text-white font-bold leading-[0.85]"
             style={{ fontSize: "clamp(2.8rem, 10vw, 7rem)" }}
           >
             RESTORE YOUR <span className="text-[#e80202]">AURA</span>

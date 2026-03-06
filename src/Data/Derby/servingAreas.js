@@ -2,8 +2,8 @@
 
 // Hero Section
 export const HeroData = {
-  title: "AURA AUTO CARE – DERBY",
-  subtitle: "Aura Auto Care – Car Detailing & Ceramic Coating in Derby",
+  title: "AURA AUTOCARE – DERBY",
+  subtitle: "Aura AutoCare – Car Detailing & Ceramic Coating in Derby",
   description:
     "Professional detailing and ceramic coating services across Derby. We deliver high-end vehicle care for private owners and enthusiasts.",
   bgImage: "/professional-healthcare-ear-examination-medical-eq.jpg", // You can change this image

@@ -1,6 +1,3 @@
-
-
-
 export default function SolutionSection() {
   return (
     <section className="w-full bg-black text-white flex flex-col items-center justify-center py-16 px-4 md:px-8">

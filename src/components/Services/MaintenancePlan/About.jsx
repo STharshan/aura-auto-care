@@ -29,7 +29,7 @@ export default function AboutSection() {
           <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
             Performance{" "}
             <span className="bg-blue-600 text-xs text-white font-medium px-2 py-0.5 rounded-md">
-              Aura Auto Care
+              Aura AutoCare
             </span>
           </h3>
 

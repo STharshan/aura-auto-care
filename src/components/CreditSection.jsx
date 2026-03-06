@@ -1,17 +1,12 @@
 import React, { useEffect } from "react";
 import { FaToolbox } from "react-icons/fa6";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const AboutSection = () => {
   useEffect(() => {
     // Disable AOS animations on mobile (screens smaller than 1024px)
     const isMobile = window.innerWidth < 1024;
 
-    if (!isMobile) {
-      AOS.init({ duration: 1000, once: true, easing: "ease-in-out" });
-    }
   }, []);
 
   // Helper: return AOS props only on desktop

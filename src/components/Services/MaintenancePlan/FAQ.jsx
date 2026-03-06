@@ -5,7 +5,7 @@ import { Plus, X } from "lucide-react";
 export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState(null);
 
-  // ✅ Suspension-specific FAQs
+  // Suspension-specific FAQs
   const faqs = [
     {
       question: "What does the suspension system do?",

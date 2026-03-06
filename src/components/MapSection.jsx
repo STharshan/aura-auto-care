@@ -58,7 +58,7 @@ export default function MapSection() {
         {/* Header */}
         <div className="text-center mb-12 max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-           Aura Auto Care Service Coverage Map
+           Aura AutoCare Service Coverage Map
           </h2>
           <p className="text-lg text-white/90">
            

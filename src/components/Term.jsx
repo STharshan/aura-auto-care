@@ -1,6 +1,3 @@
-// src/pages/TermsConditions.js
-
-
 const TermsConditions = () => {
   return (
     <section className="bg-black text-white mx-auto px-4 py-8">
@@ -28,7 +25,7 @@ const TermsConditions = () => {
                   <section>
                       <h2 className="text-2xl font-medium">3. Intellectual Property</h2>
                       <p className="text-white">
-                          All content on this website (including text, images, graphics, and logos) is owned by or licensed to  Aura Auto Care.
+                          All content on this website (including text, images, graphics, and logos) is owned by or licensed to  Aura AutoCare.
                           You may view, download, and print content for personal use only.
                           You must not copy, reproduce, or distribute our website content without prior written consent.
                       </p>
@@ -77,7 +74,7 @@ const TermsConditions = () => {
                           If you have any questions about these Terms of Use, please contact us:
                       </p>
                       <div className="text-white">
-                          <p><strong>Aura Auto Care</strong></p>
+                          <p><strong>Aura AutoCare</strong></p>
                           <p>Email: <a href="mailto: auraautocare1@gmail.com" className="text-[#e80202] hover:underline"> auraautocare1@gmail.com</a></p>
                           <p>Phone: +44 7305 794353</p>
                           <p>Address: Nottingham, East midlands, United Kingdom</p>

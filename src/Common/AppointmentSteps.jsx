@@ -1,5 +1,4 @@
 import React from "react";
-// Import the specific icons from lucide-react
 import { Calendar, Eye, Sparkles, Heart } from "lucide-react";
 
 const StepIcon = ({ type }) => {

@@ -13,7 +13,7 @@ const Footer = () => {
           {/* BRAND */}
           <div className="flex flex-col flex-1">
             <span className="text-2xl font-bold mb-4">
-              Aura Auto Care
+              Aura AutoCare
             </span>
 
             <p className="text-gray-300 leading-relaxed mb-6 max-w-sm">
@@ -22,10 +22,10 @@ const Footer = () => {
 
             {/* SOCIALS */}
             <div className="flex gap-5 mt-auto">
-              <a href="https://www.instagram.com/aura.autocare/" target="_blank" className="hover:text-pink-500 transition text-2xl">
+              <a rel="noopener noreferrer" href="https://www.instagram.com/aura.autocare/" target="_blank" className="hover:text-pink-500 transition text-2xl">
                 <Instagram />
               </a>
-              <a href="https://www.tiktok.com/@auraautocare" target="_blank" className="hover:text-[#e80202] transition text-2xl">
+              <a rel="noopener noreferrer" href="https://www.tiktok.com/@auraautocare" target="_blank" className="hover:text-[#e80202] transition text-2xl">
                 <BsTiktok />
               </a>
             </div>
@@ -95,7 +95,7 @@ const Footer = () => {
       {/* BOTTOM */}
       <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-300">
         <div className="text-center md:text-left">
-          © {new Date().getFullYear()} Aura Auto Care. All rights reserved.
+          © {new Date().getFullYear()} Aura AutoCare. All rights reserved.
         </div>
 
         <div>Powered by <a href="https://www.ansely.co.uk/" className="hover:underline hover:text-[#F21B23]">Ansely</a></div>

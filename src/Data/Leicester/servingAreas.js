@@ -2,8 +2,8 @@
 
 // Hero Section
 export const HeroData = {
-  title: "AURA AUTO CARE – LEICESTER",
-  subtitle: "Aura Auto Care – Car Detailing & Ceramic Coating in Leicester",
+  title: "AURA AUTOCARE – LEICESTER",
+  subtitle: "Aura AutoCare – Car Detailing & Ceramic Coating in Leicester",
   description:
     "Professional car detailing, paint correction, and ceramic coating wherever you are in Leicester. We provide premium mobile and workshop-based detailing solutions to protect, enhance, and maintain your vehicle.",
   bgImage: "/professional-healthcare-ear-examination-medical-eq.jpg",

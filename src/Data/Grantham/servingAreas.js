@@ -2,8 +2,8 @@
 
 // Hero Section
 export const HeroData = {
-  title: "AURA AUTO CARE – GRANTHAM",
-  subtitle: "Aura Auto Care – Car Detailing & Ceramic Coating in Grantham",
+  title: "AURA AUTOCARE – GRANTHAM",
+  subtitle: "Aura AutoCare – Car Detailing & Ceramic Coating in Grantham",
   description:
     "Premium detailing and paint protection services across Grantham and Lincolnshire.",
   bgImage: "/professional-healthcare-ear-examination-medical-eq.jpg", // You can change this image

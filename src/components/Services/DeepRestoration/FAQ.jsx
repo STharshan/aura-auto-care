@@ -5,7 +5,7 @@ import { Plus, X } from "lucide-react";
 export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState(null);
 
-  // ✅ Battery-specific FAQs
+  // Battery-specific FAQs
   const faqs = [
     {
       question: "How do I know if my car battery needs replacing?",

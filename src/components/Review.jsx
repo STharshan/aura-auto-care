@@ -37,7 +37,7 @@ export default function Review() {
   const testimonials = [
     {
       title: "Excellent Service & Fair Prices",
-      text: "I took my car to Aura Autocare for a 2-step paint correction and ceramic coating, and it's never looked better. Years of swirl marks and cheap car washes left it in a bad state, but Aura has made the paint look brand new! Adam knows what he's doing and treated my car like his own. Highly recommend Aura Autocare for all your detailing needs.",
+      text: "Took my car to aura autocare for a 2 step paint correction and ceramic coating and it's never looked better. Years of swirl marks and cheap car washes left it in a state but Aura have made the paint look brand new!",
       name: "Z I",
       initials: "Z",
       bg: "#BCFFBB",

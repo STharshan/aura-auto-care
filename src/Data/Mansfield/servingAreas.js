@@ -2,8 +2,8 @@
 
 // Hero Section
 export const HeroData = {
-  title: "AURA AUTO CARE – MANSFIELD",
-  subtitle: "Aura Auto Care – Car Detailing & Ceramic Coating in Mansfield",
+  title: "AURA AUTOCARE – MANSFIELD",
+  subtitle: "Aura AutoCare – Car Detailing & Ceramic Coating in Mansfield",
   description:
     "Expert mobile detailing, paint correction, and ceramic coating services in Mansfield and nearby areas.",
   bgImage: "/professional-healthcare-ear-examination-medical-eq.jpg", // You can change this image

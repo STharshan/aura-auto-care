@@ -26,7 +26,7 @@ const contentData = {
             btnText: "Book Now",
             bgColor: "bg-red-900/10",
             borderColor: "border-red-900/20",
-            iconColor: "text-[#B62025] dark:text-[#FF4B4B]",
+            iconColor: "text-[#B62025]",
             features: [
                 {
                     icon: <Zap size={18} />,
@@ -51,7 +51,7 @@ const contentData = {
             btnText: "Book Now",
             bgColor: "bg-red-900/10",
             borderColor: "border-red-900/20",
-            iconColor: "text-[#B62025] dark:text-[#FF4B4B]",
+            iconColor: "text-[#B62025]",
             features: [
                 {
                     icon: <Zap size={18} />,
@@ -182,7 +182,6 @@ export default function PaintPackage() {
                         </a>
                     ))}
                 </div>
-
             </div>
         </section>
     );

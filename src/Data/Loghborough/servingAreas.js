@@ -1,9 +1,9 @@
 // src/Data/Loughborough/servingAreas.js
 
-// Hero Section for Aura Auto Care in Loughborough
+// Hero Section for Aura AutoCare in Loughborough
 export const HeroData = {
-  title: "AURA AUTO CARE – LOUGHBOROUGH",
-  subtitle: "Aura Auto Care – Car Detailing & Ceramic Coating in Loughborough",
+  title: "AURA AUTOCARE – LOUGHBOROUGH",
+  subtitle: "Aura AutoCare – Car Detailing & Ceramic Coating in Loughborough",
   description:
     "Professional mobile detailing and ceramic coating services for private and commercial vehicles in Loughborough.",
   bgImage: "/professional-healthcare-ear-examination-medical-eq.jpg", // Update image path if needed
@@ -39,7 +39,7 @@ export const LoughboroughSubtitle =
 export const footer =
   "Don’t see your area listed? Contact us to confirm availability.";
 
-// Services Section for Aura Auto Care in Loughborough
+// Services Section for Aura AutoCare in Loughborough
 export const LoughboroughServicesData = {
   mainTitle: "Our Detailing Services in Loughborough",
   location: "Loughborough",
@@ -74,7 +74,7 @@ export const LoughboroughServicesData = {
   ],
 };
 
-// Appointment Steps for Aura Auto Care in Loughborough (Same as Leicester)
+// Appointment Steps for Aura AutoCare in Loughborough (Same as Leicester)
 export const LoughboroughAppointmentData = {
   mainTitle: "How We Work",
   footerText:
@@ -107,7 +107,7 @@ export const LoughboroughAppointmentData = {
   ],
 };
 
-// Final CTA for Aura Auto Care in Loughborough
+// Final CTA for Aura AutoCare in Loughborough
 export const LoughboroughCTAData = {
   title: "Reliable, Local & Customer-Focused Detailing",
   line1:

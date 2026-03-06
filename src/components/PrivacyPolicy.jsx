@@ -109,7 +109,7 @@ const PrivacyPolicy = () => {
                         If you have any questions about this Privacy Policy or how we handle your personal data, please contact us:
                     </p>
                     <div className="text-white">
-                        <p><strong>Aura Auto Care</strong></p>
+                        <p><strong>Aura AutoCare</strong></p>
                         <p>Email: <a href="mailto:auraautocare1@gmail.com" className="text-[#e80202] hover:underline">auraautocare1@gmail.com</a></p>
                         <p>Phone: +44 7305 794353</p>
                         <p>Address: Nottingham, East midlands, United Kingdom</p>

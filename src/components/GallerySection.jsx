@@ -1,7 +1,5 @@
 
 import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 // Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -44,13 +42,6 @@ const swiperStyles = `
 `;
 
 export default function GallerySection() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      easing: "ease-in-out",
-      once: false,
-    });
-  }, []);
 
   const galleryItems = [
     { type: "image", src: "1.webp", text: "Engine Diagnostics" },

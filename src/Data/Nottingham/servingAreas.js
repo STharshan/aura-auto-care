@@ -1,7 +1,7 @@
 // Hero Section
 export const HeroData = {
-  title: "AURA AUTO CARE – NOTTINGHAM",
-  subtitle: "Aura Auto Care – Car Detailing & Ceramic Coating in Nottingham",
+  title: "AURA AUTOCARE – NOTTINGHAM",
+  subtitle: "Aura AutoCare – Car Detailing & Ceramic Coating in Nottingham",
   description:
     "Premium mobile car detailing, paint correction, and ceramic coating services across Nottingham. We enhance, protect, and maintain your vehicle with professional-grade products and techniques.",
   bgImage: "/professional-healthcare-ear-examination-medical-eq.jpg",

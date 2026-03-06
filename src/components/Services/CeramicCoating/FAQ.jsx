@@ -5,7 +5,7 @@ import { Plus, X } from "lucide-react";
 export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState(null);
 
-  // ✅ MOT-specific FAQs (with the new question added)
+  // MOT-specific FAQs (with the new question added)
   const faqs = [
     {
       question: "What is an MOT test?",

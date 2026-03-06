@@ -5,7 +5,7 @@ import { Plus, X } from "lucide-react";
 export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState(null);
 
-  // ✅ Timing Belt FAQs
+  // Timing Belt FAQs
   const faqs = [
     {
       question: "What does a timing belt do?",
