@@ -107,7 +107,7 @@ export default function HeroSection() {
 
             {/* Book Now Button */}
             <a
-              href="tel:01162530770"
+              href="tel:+447305794353"
               className="inline-block mt-6 px-6 py-3 bg-[#e80202] hover:bg-[#cc002a] rounded-lg font-medium text-white shadow-[0_8px_30px_rgba(255,0,0,0.5)] border-2 border-[#e80202]/30 transition-all"
             >
               Book Now

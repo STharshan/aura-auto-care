@@ -56,7 +56,7 @@ const Footer = () => {
             <ul className="space-y-4 text-gray-300 md:text-right">
               {/* Clickable phone */}
               <li>
-                <a href="tel: +447305794353" className="hover:text-white transition-colors">
+                <a href="tel:+447305794353" className="hover:text-white transition-colors">
                   +44 7305 794353
                 </a>
               </li>

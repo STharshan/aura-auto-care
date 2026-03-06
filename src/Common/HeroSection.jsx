@@ -7,7 +7,6 @@ export default function HeroSection({
   bgImage,
   buttonText,
   buttonLink,
-  callNumber,
   stats = []
 }) {
   const scrollWithOffset = (el) => {
