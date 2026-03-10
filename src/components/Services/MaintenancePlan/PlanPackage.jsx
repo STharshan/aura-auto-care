@@ -22,41 +22,41 @@ const contentData = {
     packages: [
         {
             type: "2-WEEK PLAN",
-            price: "20% OFF",
+            price: "from £60",
             btnText: "Book",
             bgColor: "bg-red-900/10",
             borderColor: "border-red-900/20",
             iconColor: "text-[#B62025]",
             features: [
                 { icon: <Zap size={18} />, title: "M/F Valet:", description: "Bi-weekly upkeep." },
-                { icon: <Droplets size={18} />, title: "Ceramic:", description: "£25 first, then FREE." },
-                { icon: <Shield size={18} />, title: "Setup:", description: "Full Valet + Clay Bar." }
+                { icon: <Droplets size={18} />, title: "Protection:", description: "3-4 Months" },
+                { icon: <Shield size={18} />, title: "Time:", description: "2-3hrs" }
             ]
         },
         {
             type: "4-WEEK PLAN",
-            price: "10% OFF",
+            price: "from £70",
             btnText: "Book",
             bgColor: "bg-red-900/10",
             borderColor: "border-red-900/20",
             iconColor: "text-[#B62025]",
             features: [
                 { icon: <Zap size={18} />, title: "M/F Valet:", description: "Monthly upkeep." },
-                { icon: <Droplets size={18} />, title: "Ceramic:", description: "£25 first, then FREE." },
-                { icon: <Shield size={18} />, title: "Setup:", description: "Full Valet + Clay Bar." }
+                { icon: <Droplets size={18} />, title: "Protection:", description: "3-4 Months" },
+                { icon: <Shield size={18} />, title: "Time:", description: "2-4hrs" }
             ]
         },
         {
             type: "6-WEEK PLAN",
-            price: "10% OFF",
+            price: "from £85",
             btnText: "Book",
             bgColor: "bg-red-900/10",
             borderColor: "border-red-900/20",
             iconColor: "text-[#B62025]",
             features: [
                 { icon: <Zap size={18} />, title: "Full Valet:", description: "6-week cycle." },
-                { icon: <Droplets size={18} />, title: "Ceramic:", description: "£25 first, then FREE." },
-                { icon: <Shield size={18} />, title: "Setup:", description: "Full Valet + Clay Bar." }
+                { icon: <Droplets size={18} />, title: "Protection:", description: "3-4 Months" },
+                { icon: <Shield size={18} />, title: "Time:", description: "3-5 hrs" }
             ]
         }
     ]

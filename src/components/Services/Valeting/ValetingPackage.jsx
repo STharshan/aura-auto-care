@@ -59,19 +59,6 @@ const contentData = {
                 { icon: <Shield size={18} />, title: "Result:", description: "Restores smoothness and clarity that regular washing can't touch." }
             ]
         },
-        {
-            type: "PAINT RESTORATION",
-            price: "£195+",
-            btnText: "Book Restoration",
-            bgColor: "bg-red-900/10",
-            borderColor: "border-red-900/20",
-            iconColor: "text-[#e80202] ",
-            features: [
-                { icon: <Sparkles size={18} />, title: "Single Stage (£195):", description: "Paint enhancement to significantly improve gloss and depth." },
-                { icon: <Zap size={18} />, title: "2 Stage (£250):", description: "Intensive correction for heavy swirl marks, scratches, and oxidation." },
-                { icon: <Shield size={18} />, title: "Finish:", description: "Restores a deep, mirror-like shine to your vehicle's paintwork." }
-            ]
-        }
     ]
 };
 
