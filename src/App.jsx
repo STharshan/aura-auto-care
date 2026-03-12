@@ -24,6 +24,7 @@ import Valeting from "./page/Services/Valeting";
 import AOS from "aos"; // 2. Import AOS
 import "aos/dist/aos.css"; // 3. Import AOS CSS
 import { useEffect } from "react";
+import CarProtection from "./page/Services/CarProtection";
 
 
 function App() {
@@ -48,7 +49,8 @@ function App() {
         <Route path="/services/valeting" element={<Valeting />} />
         <Route path="/services/paint-correction" element={<PaintCorrection />} />
         <Route path="/services/deep-restoration" element={<DeepRestoration />} />
-        <Route path="services/maintenance-plan" element={<MaintenancePlan />} />
+        <Route path="/services/maintenance-plan" element={<MaintenancePlan />} />
+        <Route path="/services/car-protection" element={<CarProtection /> } />
 
         {/* Location Routes */}
         <Route path="/locations/leicester" element={<Leicester />} />

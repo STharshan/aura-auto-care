@@ -17,7 +17,7 @@ const contentData = {
     contactLinks: [
         { title: "07305794353", href: "tel:07305794353", icon: "Phone" },
         { title: "Get a Quote", href: "mailto:auraautocare1@gmail.com", icon: "Mail" },
-        { title: "Our Location", href: "https://maps.app.goo.gl/e1S2etqinvH3EkZr7", icon: "MapPin" }
+        { title: "Our Location", href: "https://maps.app.goo.gl/9gr6V6e4gwPqKxS18", icon: "MapPin" }
     ],
     packages: [
         {
