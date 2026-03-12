@@ -25,7 +25,7 @@ export default function AboutSection() {
         </p>
 
         {/* Subsection: Performance */}
-        <div className="text-left mb-6">
+        <div className="text-left mb-6 p-3">
           <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
             Performance{" "}
             <span className="bg-blue-600 text-xs text-white font-medium px-2 py-0.5 rounded-md">
@@ -42,7 +42,7 @@ export default function AboutSection() {
         </div>
 
         {/* Subsection: Responsiveness */}
-        <div className="text-left">
+        <div className="text-left p-3">
           <h3 className="text-lg font-semibold mb-2">Responsiveness</h3>
           <p className="text-gray-300 leading-relaxed">
             Our maintenance plans are designed for convenience, with flexible scheduling, priority booking, and consistent professional care to ensure your vehicle remains in premium condition.

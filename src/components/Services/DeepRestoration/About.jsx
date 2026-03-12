@@ -31,7 +31,7 @@ export default function AboutSection() {
         </p>
 
         {/* Subsection: Performance */}
-        <div className="text-left mb-6">
+        <div className="text-left mb-6 p-3">
           <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
             Performance{" "}
             <span className="bg-blue-600 text-xs text-white font-medium px-2 py-0.5 rounded-md">
@@ -48,7 +48,7 @@ export default function AboutSection() {
         </div>
 
         {/* Subsection: Responsiveness */}
-        <div className="text-left">
+        <div className="text-left p-3">
           <h3 className="text-lg font-semibold mb-2">Responsiveness</h3>
           <p className="text-gray-300 leading-relaxed">
             We deliver structured, intensive restoration with minimal disruption, providing clear progress updates and professional finishing standards.

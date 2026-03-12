@@ -47,7 +47,7 @@ export default function HeroSection() {
         {/* ===== Left Section ===== */}
         <div className="flex flex-col justify-center space-y-6">
           {/* Title */}
-          <h1 className="text-5xl sm:text-6xl font-bold leading-tight">
+          <h1 className="text-5xl sm:text-6xl pt-10 font-bold leading-tight">
             <span className="block bg-linear-to-r from-red-500 via-white to-gray-400 bg-clip-text text-transparent">
               Ceramic Coating
             </span>

@@ -51,6 +51,7 @@ export default function Navbar() {
     { name: "Paint Correction", path: "/services/paint-correction" },
     { name: "Deep Restoration", path: "/services/deep-restoration" },
     { name: "Maintenance Plan", path: "/services/maintenance-plan" },
+    { name: "Car Protection", path: "/services/car-protection" },
   ];
 
   const locations = [
