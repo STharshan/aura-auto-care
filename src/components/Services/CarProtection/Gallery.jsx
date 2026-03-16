@@ -28,7 +28,7 @@ export default function GallerySection() {
         {/* HEADER */}
         <div className="text-center mb-16 space-y-3">
           <h2 className="text-2xl md:text-6xl font-black text-white">
-            Car Protection{" "}
+            THE{" "}
             <span className="text-[#e80202]">TRANSFORMATION</span>
           </h2>
 
