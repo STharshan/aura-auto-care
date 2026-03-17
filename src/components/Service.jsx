@@ -126,7 +126,7 @@ export default function AutomotiveServicesSection() {
         </p>
 
         <a
-          href="tel:+44 7305 794353"
+          href="tel:+447305794353"
           className="inline-block px-10 py-3 bg-linear-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900
           text-white font-medium text-lg rounded-xl border-[3px] border-white/15
           shadow-[0_8px_40px_rgba(255,0,0,0.5)] transition-all duration-300"
