@@ -74,8 +74,9 @@ export default function Review() {
       {/* Background - Fixed with responsive positioning */}
       <div className="absolute inset-0">
         <img
-          src="logo-white.png"
+          src="/logo-white.png"
           alt="Hear it from our clients"
+          loading="lazy"
           className="w-full h-full object-top sm:object-center md:object-center"
           style={{
             objectPosition: 'center center'
@@ -121,7 +122,7 @@ export default function Review() {
       {/* === CTA BUTTON TO GOOGLE REVIEWS === */}
       <div className="relative z-10 pb-20 sm:pb-24 md:pb-28 text-center px-4">
         <a
-          href="https://www.google.com/search?sca_esv=e376e5018d0e0b4b&rlz=1C5CHFA_enCA1132CA1132&sxsrf=ANbL-n6LkZG4NnQYFfr-JkzOI7DA6bTR5g:1771957274283&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOYkKvkfpNDp-ul2ARXNrRYgmJO4DmtKU_VV_Rz1cRUmsazW4sU0Gbeo0HrPBChxotvfj1j9LMiOkC-NOEnt20VIIv4iK&q=Aura+AutoCare+Reviews&sa=X&ved=2ahUKEwipgZCf3_KSAxX5UGcHHT02IaEQ0bkNegQIIhAF&biw=1366&bih=633&dpr=1"
+          href="https://www.google.com/search?sca_esv=4ae20d8bd47daad1&sxsrf=ANbL-n5vXX4Myd0y-e5WpIiOdIA9Fu_DHg:1773756618739&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOYkKvkfpNDp-ul2ARXNrRYgmJO4DmtKU_VV_Rz1cRUmsazW4sU0Gbeo0HrPBChxotvfj1j9LMiOkC-NOEnt20VIIv4iK&q=Aura+AutoCare+Reviews&sa=X&ved=2ahUKEwjf6rWpjqeTAxVEzTgGHRrcINgQ0bkNegQIIxAF&biw=1366&bih=633&dpr=1"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block px-8 sm:px-10 py-2.5 sm:py-3 text-base sm:text-lg font-semibold rounded-full 

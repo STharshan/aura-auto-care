@@ -1,11 +1,10 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const cards = [
   {
     path: "/services/valeting",
-    logoSrc: "/logos/valeting-logo.png",
     tag: "Detailing",
     title: "Valeting",
     subtitle: "Interior & Exterior Care",
@@ -13,7 +12,6 @@ const cards = [
   },
   {
     path: "/services/ceramic-coating",
-    logoSrc: "/logos/ceramic-logo.png",
     tag: "Protection",
     title: "Ceramic Coating",
     subtitle: "Long-Lasting Paint Protection",
@@ -21,7 +19,6 @@ const cards = [
   },
   {
     path: "/services/paint-correction",
-    logoSrc: "/logos/paint-correction-logo.png",
     tag: "Restoration",
     title: "Paint Correction",
     subtitle: "Flawless Paint Finish",
@@ -29,7 +26,6 @@ const cards = [
   },
   {
     path: "/services/deep-restoration",
-    logoSrc: "/logos/deep-restoration-logo.png",
     tag: "Revival",
     title: "Deep Restoration",
     subtitle: "Complete Vehicle Revival",
@@ -37,7 +33,6 @@ const cards = [
   },
   {
     path: "/services/maintenance-plan",
-    logoSrc: "/logos/maintenance-plan-logo.png",
     tag: "Care Plan",
     title: "Maintenance Plan",
     subtitle: "Ongoing Vehicle Care",
@@ -61,8 +56,9 @@ function ServiceCard({ path, logoSrc, tag, title, subtitle, body }) {
       <div className="flex items-center justify-between mb-6">
         <div className="w-16 h-16 flex items-center justify-center">
           <img
-            src="logo-white.png"
+            src="/logo-white.png"
             alt={`${title} Logo`}
+            loading="lazy"
             className="max-w-full max-h-full object-contain"
           />
         </div>
@@ -130,7 +126,7 @@ export default function AutomotiveServicesSection() {
         </p>
 
         <a
-          href="tel:+441162530770"
+          href="tel:+44 7305 794353"
           className="inline-block px-10 py-3 bg-linear-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900
           text-white font-medium text-lg rounded-xl border-[3px] border-white/15
           shadow-[0_8px_40px_rgba(255,0,0,0.5)] transition-all duration-300"

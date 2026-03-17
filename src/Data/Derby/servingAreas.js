@@ -9,7 +9,7 @@ export const HeroData = {
   bgImage: "/professional-healthcare-ear-examination-medical-eq.jpg", // You can change this image
   buttonText: "Book Appointment",
   buttonLink: "/#contact",
-  callNumber: "+448081371961",
+  callNumber: "+447305794353",
   stats: [
     { value: "100% ", label: "Professional & Reliable Service" },
     { value: "Derby", label: "Service Coverage Area" },

@@ -19,7 +19,7 @@ export default function HeroSection({
           loop
           playsInline
         >
-          <source src="/video.mp4" type="video/mp4" />
+          <source src="/protection.mp4" type="video/mp4" />
         </video>
 
         {/* Overlay */}

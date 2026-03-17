@@ -75,6 +75,7 @@ export default function Navbar() {
           <img
             src="/logo-white.png"
             alt="aura Logo"
+            loading="lazy"
             className="h-18 w-auto object-contain"
           />
         </div>
@@ -242,10 +243,6 @@ export default function Navbar() {
               </div>
             )}
           </div>
-
-          <HashLink to="/#package" className="block text-lg font-medium" onClick={handleMobileMenuClick}>
-            Package
-          </HashLink>
           <HashLink to="/#testimonials" className="block text-lg font-medium" onClick={handleMobileMenuClick}>
             Testimonials
           </HashLink>

@@ -65,11 +65,6 @@ export default function HeroSection() {
 
         {/* ===== Right Card ===== */}
         <div className="relative bg-linear-to-br from-[#1a0000] via-[#0a0a0a] to-[#001b3f] rounded-2xl p-10 border border-white/10 shadow-[0_0_80px_-20px_rgba(255,0,0,0.5)] overflow-hidden">
-          <img
-            src="https://framerusercontent.com/images/QMirkdl4WPEe5bmSFhvVcssWj4.svg"
-            alt="Star line glow"
-            className="absolute bottom-0 right-0 w-[200px] h-[200px] opacity-20 pointer-events-none select-none"
-          />
 
           <div className="space-y-6 relative z-10">
             <div>

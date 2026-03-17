@@ -141,6 +141,7 @@ export default function GallerySection() {
                     src={item.src}
                     className="w-full h-72 object-cover"
                     alt={item.text}
+                    loading="lazy"
                   />
                 )}
               </div>

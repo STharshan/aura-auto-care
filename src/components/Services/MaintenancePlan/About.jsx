@@ -7,6 +7,7 @@ export default function AboutSection() {
           <img
             src="/logo-white.png"
             alt="Scheduled Vehicle Care"
+            loading="lazy"
             className="w-64 sm:w-72 md:w-80 lg:w-96 object-contain"
           />
         </div>

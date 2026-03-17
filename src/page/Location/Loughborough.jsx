@@ -9,7 +9,6 @@ import AppointmentSteps from "../../Common/AppointmentSteps";
 
 
 import FinalCTASection from "../../Common/FinalCTASection";
-import LoughboroughMapSection from "../../Data/Loghborough/LoghboroughMapSection"
 
 import {
   LoughboroughAreas,
@@ -19,9 +18,9 @@ import {
   footer,
   LoughboroughServicesData,
   LoughboroughCTAData
-} from "../../Data/Loghborough/servingAreas";
+} from "../../Data/Loughborough/servingAreas";
 import { LeicesterAppointmentData } from "../../Data/Leicester/servingAreas";
-import LoghboroughMapSection from "../../Data/Loghborough/LoghboroughMapSection";
+import LoughboroughMapSection from "../../Data/Loughborough/LoughboroughMapSection"
 
 function Loughborough() {
   return (
@@ -36,7 +35,7 @@ function Loughborough() {
         subtitle={LoughboroughSubtitle}
         footer={footer}
       />
-      <LoghboroughMapSection />
+      <LoughboroughMapSection />
 
       {/* Services / Comparison Section */}
       <MicrosuctionComparison data={LoughboroughServicesData} />

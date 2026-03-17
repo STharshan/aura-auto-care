@@ -45,6 +45,7 @@ const WhatInclude = () => {
                     <img
                         src="/api/placeholder/800/600" // Replace with your orange car image
                         alt="Professional car detailing"
+                        loading="lazy"
                         className="w-full h-full object-cover rounded-lg shadow-2xl"
                     />
                 </div>

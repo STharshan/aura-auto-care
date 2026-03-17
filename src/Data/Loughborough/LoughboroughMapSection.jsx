@@ -50,7 +50,7 @@ function FitBounds() {
 }
 
 /* ---------------- MAIN COMPONENT ---------------- */
-export default function LoghboroughMapSection() {
+export default function LoughboroughMapSection() {
   const [selectedArea, setSelectedArea] = useState(null);
 
   return (

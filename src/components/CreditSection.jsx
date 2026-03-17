@@ -38,8 +38,9 @@ const AboutSection = () => {
                        z-0 rounded-sm overflow-hidden"
           >
             <img
-              src="a1.jpeg"
+              src="/a1.jpeg"
               alt="Workshop background"
+              loading="lazy"
               className="w-full h-full object-cover opacity-80 transition-opacity duration-500"
             />
           </div>
@@ -48,6 +49,7 @@ const AboutSection = () => {
           <img
             src="/a2.png"
             alt="Mechanic"
+            loading="lazy"
             className="relative z-10 rounded-sm shadow-lg w-[260px] sm:w-[280px] md:w-[320px] 
                        h-[340px] sm:h-[380px] md:h-[420px] object-cover mt-10 ml-10 sm:mt-12 md:mt-16"
           />
@@ -85,8 +87,9 @@ const AboutSection = () => {
               {...aosProps("fade-up", 300)}
             >
               <img
-                src="logo-white.png"
+                src="/logo-white.png"
                 alt="AURA Autocare"
+                loading="lazy"
                 className="w-12 h-12  object-cover shrink-0"
               />
               <div>

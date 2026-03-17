@@ -44,6 +44,7 @@ function TransformationCard({ item, index }) {
             <img
               src={item?.before}
               alt="Before"
+              loading="lazy"
               className="w-full h-full object-cover"
             />
           )}
@@ -65,6 +66,7 @@ function TransformationCard({ item, index }) {
           <img
             src={isAfter ? item.after : item.before}
             alt={isAfter ? "After" : "Before"}
+            loading="lazy"
             className="w-full h-full object-cover"
           />
         )}
