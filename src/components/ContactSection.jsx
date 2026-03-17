@@ -107,16 +107,16 @@ export default function ContactSection() {
   return (
     <section id="contact" className="py-12 scroll-m-10 px-4" style={{ backgroundColor: "#000000" }}>
       <div className="max-w-6xl mx-auto">
-        <h2 data-aos="fade-up" className="text-center text-2xl md:text-3xl font-bold" style={{ color: "#e80202" }}>
+        <h2  className="text-center text-2xl md:text-3xl font-bold" style={{ color: "#e80202" }}>
           Ready to Restore Your Car's Look?
         </h2>
-        <p data-aos="fade-up" data-aos-delay="100" className="text-center mt-2 max-w-2xl mx-auto" style={{ color: "#a3a3a3" }}>
+        <p className="text-center mt-2 max-w-2xl mx-auto" style={{ color: "#a3a3a3" }}>
           Contact us today to book our services, ask questions, or request a free quote. Our expert team is here to bring your vehicle back to flawless condition.
         </p>
 
         <div className="mt-10 grid md:grid-cols-2 gap-8">
           {/* Info Card */}
-          <div data-aos="fade-right" className="rounded-2xl p-6 md:p-8" style={{ backgroundColor: "#111111" }}>
+          <div className="rounded-2xl p-6 md:p-8" style={{ backgroundColor: "#111111" }}>
             <h3 className="text-lg font-semibold text-white">Contact Information</h3>
             <div className="mt-6 space-y-6" style={{ color: "#a3a3a3" }}>
               <div>
@@ -142,7 +142,7 @@ export default function ContactSection() {
           </div>
 
           {/* Form Card */}
-          <div data-aos="fade-left" className="rounded-2xl p-6 md:p-8" style={{ backgroundColor: "#111111" }}>
+          <div className="rounded-2xl p-6 md:p-8" style={{ backgroundColor: "#111111" }}>
             {status.message && (
               <div className={`mb-4 p-3 rounded text-sm ${status.state === "success" ? "bg-green-900 text-green-200" : "bg-red-900 text-red-200"}`}>
                 {status.message}
