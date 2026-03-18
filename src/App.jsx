@@ -25,6 +25,7 @@ import AOS from "aos"; // 2. Import AOS
 import "aos/dist/aos.css"; // 3. Import AOS CSS
 import { useEffect } from "react";
 import CarProtection from "./page/Services/CarProtection";
+import ShowroomPage from "./components/Showroom";
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/review" element={<ReviewPage />} />
+        <Route path="/showroom" element={<ShowroomPage /> } />
 
         {/* Service Routes */}
         <Route path="/services/ceramic-coating" element={<CeramicCoating />} />
@@ -59,6 +61,7 @@ function App() {
         <Route path="/locations/mansfield" element={<Mansfield />} />
         <Route path="/locations/grantham" element={<Grantham />} />
         <Route path="/locations/loughborough" element={<Loughborough />} />
+
 
         <Route path="/terms" element={<TermsConditions />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />

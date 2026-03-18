@@ -52,7 +52,7 @@ export default function HeroSection() {
 
           <h1 className="text-5xl sm:text-6xl pt-10 font-bold leading-tight">
             <span className="block bg-linear-to-r from-red-500 via-white to-gray-400 bg-clip-text text-transparent">
-              Protection Packages
+              Car protection package
             </span>
           </h1>
 
@@ -63,7 +63,7 @@ export default function HeroSection() {
           {/* Tags */}
           <div className="flex gap-4 pt-4">
             <div className="px-5 py-2 bg-linear-to-t from-[#e8020233] to-[#9999991a] border border-white/10 rounded-lg backdrop-blur-sm">
-              <p className="text-white text-sm font-medium">Protection Packages</p>
+              <p className="text-white text-sm font-medium">Car protection package</p>
             </div>
 
             <div className="px-5 py-2 bg-linear-to-t from-[#003cff33] to-[#9999991a] border border-white/10 rounded-lg backdrop-blur-sm">
@@ -80,7 +80,7 @@ export default function HeroSection() {
             <div>
               <p className="text-white/60 text-sm">Service</p>
               <h4 className="text-xl font-semibold">
-                Protection Package Application
+                Car protection package Application
               </h4>
             </div>
 

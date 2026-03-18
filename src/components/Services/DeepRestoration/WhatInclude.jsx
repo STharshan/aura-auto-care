@@ -43,7 +43,7 @@ const WhatInclude = () => {
                 <div className="relative order-1 lg:order-2 h-full min-h-[300px] md:min-h-[500px]">
                     <div className="absolute inset-0 bg-linear-to-r from-black via-transparent to-transparent z-10 hidden lg:block" />
                     <img
-                        src="/api/placeholder/800/600" // Replace with your orange car image
+                        src="/6.webp" 
                         alt="Professional car detailing"
                         loading="lazy"
                         className="w-full h-full object-cover rounded-lg shadow-2xl"

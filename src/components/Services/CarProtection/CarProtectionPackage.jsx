@@ -12,7 +12,7 @@ const iconMap = {
 const contentData = {
   detail: {
     tittle: "Car Protection",
-    desc: "Ceramic Protection Full-Vehicle Ceramic Protection Packages",
+    desc: "Car Protection Packages",
   },
 
   contactLinks: [

@@ -21,7 +21,7 @@ export default function AboutSection() {
         </h2>
 
         <p className="text-gray-300 leading-relaxed mb-6">
-          Our protection packages are designed to deliver complete, long-lasting
+          Our car protection package are designed to deliver complete, long-lasting
           ceramic protection across every exterior surface of your vehicle. From
           thorough decontamination and machine polishing through to professional
           coating application, each package is tailored to the level of

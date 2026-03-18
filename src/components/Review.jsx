@@ -71,19 +71,6 @@ export default function Review() {
       className="relative bg-black text-white overflow-hidden min-h-screen"
       id="testimonials"
     >
-      {/* Background - Fixed with responsive positioning */}
-      <div className="absolute inset-0">
-        <img
-          src="/logo-white.png"
-          alt="Hear it from our clients"
-          loading="lazy"
-          className="w-full h-full object-top sm:object-center md:object-center"
-          style={{
-            objectPosition: 'center center'
-          }}
-        />
-        <div className="absolute inset-0 bg-black/60" />
-      </div>
 
       {/* Heading */}
       <div className="relative z-10 text-center pt-20 sm:pt-24 md:pt-32 pb-8 sm:pb-10 md:pb-12 px-4">
