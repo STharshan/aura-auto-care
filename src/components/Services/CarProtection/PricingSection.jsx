@@ -48,7 +48,7 @@ const WhatIsIncluded = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-b from-black via-[#0b0b0b] to-[#050505] py-24 px-6 md:px-12 text-white">
+    <section className="bg-linear-to-b from-black via-[#0b0b0b] to-[#050505] py-24 px-6 md:px-12 text-white">
       <div className="max-w-7xl mx-auto">
         
         {/* HEADER */}

@@ -152,6 +152,9 @@ export default function Navbar() {
           <HashLink to="/#testimonials" className="hover:text-[#e80202] transition">
             Testimonials
           </HashLink>
+          <HashLink to="/showroom" className="hover:text-[#e80202] transition">
+            Showroom
+          </HashLink>
           <HashLink to="/review" className="hover:text-[#e80202] transition">
             Review
           </HashLink>
@@ -246,10 +249,12 @@ export default function Navbar() {
           <HashLink to="/#testimonials" className="block text-lg font-medium" onClick={handleMobileMenuClick}>
             Testimonials
           </HashLink>
+           <HashLink to="/showroom" className="block text-lg font-medium" onClick={handleMobileMenuClick}>
+            Showroom
+          </HashLink>
           <HashLink to="/review" className="block text-lg font-medium" onClick={handleMobileMenuClick}>
             Review
           </HashLink>
-          {/* Contact Us added here */}
           <HashLink to="/#contact" className="block text-lg font-medium" onClick={handleMobileMenuClick}>
             Contact Us
           </HashLink>
