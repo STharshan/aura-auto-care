@@ -40,14 +40,14 @@ const GalleryData = {
       {
         id: 1,
         type: "video",
-        before: "/db3.mp4", // Key is "before"
-        after: "/da3.mp4",  // Key is "after"
+        before: "/da11.mp4", // Key is "before"
+        after: "/a3.mp4",  // Key is "after"
       },
       {
         id: 1,
         type: "video",
         before: "/db4.mp4", // Key is "before"
-        after: "/da4.mp4",  // Key is "after"
+        after: "/a8.mp4",  // Key is "after"
       },
     ],
   },
