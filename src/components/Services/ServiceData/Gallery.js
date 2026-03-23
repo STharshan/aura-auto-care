@@ -57,14 +57,14 @@ const GalleryData = {
       {
         id: 1,
         type: "video",
-        before: "/pb1.mp4",
-        after: "/pa1.mp4",
+        before: "/before1.mp4",
+        after: "/after1.mp4",
       },
       {
         id: 2,
         type: "video",
-        before: "/pb2.mp4",
-        after: "/pa2.mp4",
+        before: "/before2.mp4",
+        after: "/after2.mp4",
       },
     ],
   },
