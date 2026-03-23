@@ -44,15 +44,14 @@ const swiperStyles = `
 export default function GallerySection() {
 
   const galleryItems = [
-    { type: "image", src: "1.webp", text: "Engine Diagnostics" },
-    { type: "image", src: "2.webp", text: "Electrical Systems" },
-    { type: "image", src: "3.webp", text: "Auto Repair" },
-    { type: "image", src: "4.webp", text: "Testing & Tools" },
     { type: "image", src: "5.webp", text: "Diagnostic Equipment" },
     { type: "image", src: "6.webp", text: "Engine Diagnostics" },
+    { type: "image", src: "v7.jpeg", text: "Testing & Tools" },
     { type: "image", src: "7.webp", text: "Electrical Systems" },
     { type: "image", src: "8.webp", text: "Auto Repair" },
-    { type: "image", src: "9.webp", text: "Testing & Tools" },
+    { type: "image", src: "v6.jpeg", text: "Testing & Tools" },
+    { type: "image", src: "v2.jpeg", text: "Testing & Tools" },
+    { type: "image", src: "v3.jpeg", text: "Testing & Tools" },
     { type: "image", src: "10.webp", text: "Testing & Tools" },
   ];
 

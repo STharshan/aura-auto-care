@@ -38,7 +38,7 @@ const AboutSection = () => {
                        z-0 rounded-sm overflow-hidden"
           >
             <img
-              src="/a1.jpeg"
+              src="/6.webp"
               alt="Workshop background"
               loading="lazy"
               className="w-full h-full object-cover opacity-80 transition-opacity duration-500"

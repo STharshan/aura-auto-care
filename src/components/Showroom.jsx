@@ -29,7 +29,6 @@ export default function GallerySection() {
     { id: 2, type: "image", src: "/6.webp" },
     { id: 4, type: "image", src: "/8.webp" },
     { id: 6, type: "image", src: "/10.webp" },
-    { id: 7, type: "image", src: "/11.webp" },
     { id: 9, type: "image", src: "/a2.png" },
     { id: 10, type: "image", src: "/v2.jpeg" },
   ];
