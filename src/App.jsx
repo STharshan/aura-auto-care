@@ -26,6 +26,7 @@ import "aos/dist/aos.css"; // 3. Import AOS CSS
 import { useEffect } from "react";
 import CarProtection from "./page/Services/CarProtection";
 import ShowroomPage from "./components/Showroom";
+import NotFound from "./page/NotFound";
 
 
 function App() {
@@ -65,6 +66,7 @@ function App() {
 
         <Route path="/terms" element={<TermsConditions />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
       <GDPRConsent />

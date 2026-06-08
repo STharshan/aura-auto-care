@@ -27,7 +27,7 @@ export default function ReviewPage() {
             setShowReviewBox(true);
         } else {
             setShowReviewBox(false);
-            const googleReviewUrl = "https://share.google/DiDo8dVzOstBrBDlB";
+            const googleReviewUrl = "https://www.google.com/search?q=Aura+AutoCare+Reviews&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOYkKvkfpNDp-ul2ARXNrRYgmJO4DmtKU_VV_Rz1cRUmsazW4sU0Gbeo0HrPBChxotvfj1j9LMiOkC-NOEnt20VIIv4iK";
             window.open(googleReviewUrl, "_blank", "noopener,noreferrer");
         }
     };
