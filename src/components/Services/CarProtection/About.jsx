@@ -9,7 +9,7 @@ export default function AboutSection() {
             src="/logo-white.png"
             alt="Aura AutoCare"
             loading="lazy"
-            className="w-64 sm:w-72 md:w-80 lg:w-96 object-contain"
+            className="w-64 sm:w-72 md:w-80 lg:w-96 object-contain rounded-full"
           />
         </div>
       </div>

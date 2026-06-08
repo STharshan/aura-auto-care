@@ -24,7 +24,7 @@ const contentData = {
   packages: [
     {
       type: "ESSENTIAL 3 YEAR PROTECTION PACKAGE",
-      price: "£450",
+      price: "£500",
       btnText: "Book Essential Package",
       bgColor: "bg-red-900/10",
       borderColor: "border-red-900/20",
@@ -53,7 +53,7 @@ const contentData = {
 
     {
       type: "ADVANCED 5 YEAR PROTECTION PACKAGE",
-      price: "£600",
+      price: "£650",
       btnText: "Book Advanced Package",
       bgColor: "bg-red-900/10",
       borderColor: "border-red-900/20",
@@ -82,7 +82,7 @@ const contentData = {
 
     {
       type: "SIGNATURE 7 YEAR PROTECTION PACKAGE",
-      price: "£750",
+      price: "£799",
       btnText: "Book Signature Package",
       bgColor: "bg-red-900/10",
       borderColor: "border-red-900/20",
@@ -98,7 +98,7 @@ const contentData = {
           icon: <ShieldCheck size={18} />,
           title: "Ultimate Coating System:",
           description:
-            "Molecule 9H topped with Nero Self-Healing Coating for maximum durability and depth.",
+            "Performance PPL Reign 7 Year Coating for maximum durability and depth.",
         },
         {
           icon: <Shield size={18} />,

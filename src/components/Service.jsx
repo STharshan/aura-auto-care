@@ -59,7 +59,7 @@ function ServiceCard({ path, logoSrc, tag, title, subtitle, body }) {
             src="/logo-white.png"
             alt={`${title} Logo`}
             loading="lazy"
-            className="max-w-full max-h-full object-contain"
+            className="max-w-full max-h-full object-contain rounded-full"
           />
         </div>
         <span className="text-[11px] font-semibold px-3 py-1 rounded-md bg-linear-to-r from-red-600 to-red-800 border border-white/20 shadow-[0_0_10px_rgba(255,0,0,0.5)]">

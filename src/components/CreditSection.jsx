@@ -90,7 +90,7 @@ const AboutSection = () => {
                 src="/logo-white.png"
                 alt="AURA Autocare"
                 loading="lazy"
-                className="w-12 h-12  object-cover shrink-0"
+                className="w-12 h-12  object-cover rounded-full shrink-0"
               />
               <div>
                 <h4 className="text-gray-100 font-semibold text-sm sm:text-base">

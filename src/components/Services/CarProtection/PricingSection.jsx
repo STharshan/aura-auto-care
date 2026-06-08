@@ -27,7 +27,7 @@ const WhatIsIncluded = () => {
     {
       step: "03",
       name: "Ceramic Coating Application",
-      note: "Professional-grade coatings that chemically bond for a semi-permanent sacrificial barrier.",
+      note: "The note or description referencing the coating product used should reflect PPL Reign 7 Year Coating instead of the Carbon Collective system (Molecule 9H + Nero).",
       features: [
         { title: "Paintwork", desc: "Full body application providing UV protection and extreme hydrophobicity." },
         { title: "Wheels", desc: "High-heat resistant coating to prevent brake dust pitting and simplify cleaning." },
@@ -91,7 +91,7 @@ const WhatIsIncluded = () => {
 
               {process.note && (
                 <p className="text-xs text-[#e80202] font-medium uppercase tracking-wider mb-6 bg-[#e80202]/5 p-3 rounded-lg border border-[#e80202]/10">
-                  Note: {process.note}
+                  {process.note}
                 </p>
               )}
 

@@ -90,7 +90,7 @@ export default function Navbar() {
               src="/logo-white.png"
               alt="Aura Logo"
               loading="lazy"
-              className="h-16 sm:h-18 w-auto object-contain"
+              className="h-16 sm:h-18 w-auto rounded-full object-contain"
             />
           </div>
 

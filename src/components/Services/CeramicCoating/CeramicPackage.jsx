@@ -71,6 +71,19 @@ const contentData = {
                 { icon: <Zap size={18} />, title: "3 Year Duration:", description: "Everything protected for up to 3 years for total peace of mind." },
                 { icon: <Sparkles size={18} />, title: "Effortless:", description: "Makes maintenance of your car completely effortless." }
             ]
+        },
+        {
+            type: "PPL REIGN 7 YEAR COATING",
+            price: "From £250",
+            btnText: "Book PPL Reign Coating",
+            bgColor: "bg-red-900/10",
+            borderColor: "border-red-900/20",
+            iconColor: "text-[#e80202] ",
+            features: [
+                { icon: <ShieldCheck size={18} />, title: "7 Year Protection:", description: "Long-term defence against UV, chemical damage and environmental contaminants." },
+                { icon: <Zap size={18} />, title: "Premium Durability:", description: "Professional-grade coating for maximum hardness and longevity." },
+                { icon: <Sparkles size={18} />, title: "Deep Gloss Finish:", description: " Enhances colour depth and provides effortless long-term maintenance." }
+            ]
         }
     ]
 };
